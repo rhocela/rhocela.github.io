@@ -7,7 +7,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Rhocela Pasigna',
   tagline: 'Technical Writer & Content Developer',
-  favicon: 'img/favicon.ico',
+  // Use the custom tech writer icon for the site favicon
+  favicon: 'img/tech-writer-icon-ico.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -69,8 +70,8 @@ const config: Config = {
     navbar: {
       title: 'Rhocela Pasigna',
       logo: {
-        alt: 'Rhocela Logo',
-        src: 'img/logo.svg',
+        alt: 'Tech Writer Icon',
+        src: 'img/tech-writer-icon-png.ico',
       },
       items: [
         {to: '/about', label: 'About', position: 'left'},

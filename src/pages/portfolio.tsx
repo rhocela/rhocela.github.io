@@ -2,6 +2,12 @@ import type {ReactNode} from 'react';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 
+const slugify = (text: string) =>
+  text
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
+
 interface Project {
   title: string;
   description: string;
@@ -163,7 +169,15 @@ function ProjectCard({ project }: { project: Project }) {
 }
 
 export default function Portfolio(): ReactNode {
-  const categories = Array.from(new Set(projects.map(p => p.category)));
+  const categories = Array.from(new Set(projects.map((p) => p.category)));
+  const tocEntries = [
+    ...categories.map((category) => ({
+      label: category,
+      href: `#${slugify(category)}`,
+    })),
+    {label: 'Publications', href: '#publications'},
+    {label: 'Contact', href: '#contact'},
+  ];
 
   return (
     <Layout title="Portfolio" description="Rhocela Pasigna's Portfolio">
@@ -175,8 +189,34 @@ export default function Portfolio(): ReactNode {
             Each project represents my commitment to creating clear, user-focused, and impactful content.
           </p>
 
+          <div style={{
+            border: '1px solid var(--ifm-color-emphasis-200)',
+            borderRadius: '8px',
+            padding: '1rem 1.25rem',
+            marginBottom: '2rem',
+            background: 'var(--ifm-color-emphasis-50)',
+          }}>
+            <Heading as="h3" style={{marginTop: 0}}>On this page</Heading>
+            <ul style={{
+              listStyle: 'disc',
+              paddingLeft: '1.25rem',
+              marginBottom: 0,
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+              gap: '0.35rem 1rem',
+            }}>
+              {tocEntries.map((entry) => (
+                <li key={entry.href} style={{margin: 0}}>
+                  <a href={entry.href} style={{color: 'var(--ifm-color-primary)', fontWeight: 600}}>
+                    {entry.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           {categories.map((category) => (
-            <section key={category} style={{marginBottom: '3rem'}}>
+            <section key={category} id={slugify(category)} style={{marginBottom: '3rem'}}>
               <Heading as="h2" style={{marginBottom: '1.5rem', paddingBottom: '0.5rem', borderBottom: '2px solid var(--ifm-color-primary)'}}>
                 {category}
               </Heading>
@@ -188,9 +228,9 @@ export default function Portfolio(): ReactNode {
             </section>
           ))}
 
-          <section style={{marginBottom: '3rem'}}>
+          <section id="publications" style={{marginBottom: '3rem'}}>
             <Heading as="h2" style={{marginBottom: '1.5rem', paddingBottom: '0.5rem', borderBottom: '2px solid var(--ifm-color-primary)'}}>
-              Publications & Thought Leadership
+              Publications
             </Heading>
             
             {/* Book 1 */}
@@ -212,7 +252,7 @@ export default function Portfolio(): ReactNode {
                   whiteSpace: 'nowrap',
                   marginLeft: '1rem',
                 }}>
-                  Book
+                  Book Details
                 </span>
               </div>
               <p style={{color: 'var(--ifm-color-emphasis-700)', marginBottom: '0.75rem', fontSize: '0.9rem'}}>
@@ -258,7 +298,7 @@ export default function Portfolio(): ReactNode {
                   whiteSpace: 'nowrap',
                   marginLeft: '1rem',
                 }}>
-                  Book
+                  Book Details
                 </span>
               </div>
               <p style={{color: 'var(--ifm-color-emphasis-700)', marginBottom: '0.75rem', fontSize: '0.9rem'}}>
@@ -286,7 +326,7 @@ export default function Portfolio(): ReactNode {
             </div>
           </section>
 
-          <section style={{
+          <section id="contact" style={{
             marginTop: '3rem',
             padding: '2rem',
             backgroundColor: 'var(--ifm-color-emphasis-100)',

@@ -5,14 +5,14 @@ import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  image: string;
   description: ReactNode;
 };
 
 const FeatureList: FeatureItem[] = [
   {
     title: 'Technical Documentation',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    image: require('@site/static/img/technical-documentation.png').default,
     description: (
       <>
         Comprehensive documentation including API guides, system operations manuals, 
@@ -23,7 +23,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Cross-functional Collaboration',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    image: require('@site/static/img/collaboration.png').default,
     description: (
       <>
         Working closely with Development, Data Science, and Communications teams to 
@@ -34,7 +34,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Agile Leadership',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    image: require('@site/static/img/agile.png').default,
     description: (
       <>
         Serving as Scrum Master, facilitating agile ceremonies and promoting collaboration. 
@@ -45,11 +45,11 @@ const FeatureList: FeatureItem[] = [
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, image, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img className={styles.featureImg} src={image} alt={title} />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
