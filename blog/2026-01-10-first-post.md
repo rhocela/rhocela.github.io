@@ -1,7 +1,7 @@
 ---
 slug: first-post
 title: Welcome to My Blog
-authors: slorber
+authors: rhocela
 tags: [documentation, technical-writing, welcome]
 ---
 

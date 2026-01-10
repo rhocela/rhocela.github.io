@@ -1,19 +1,19 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+documentation:
+  label: Documentation
+  permalink: /documentation
+  description: Posts about documentation practices and strategies
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+technical-writing:
+  label: Technical Writing
+  permalink: /technical-writing
+  description: Insights and tips on technical writing
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+welcome:
+  label: Welcome
+  permalink: /welcome
+  description: Introductory and welcome posts
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+placeholder:
+  label: Placeholder
+  permalink: /placeholder
+  description: Placeholder posts for future content

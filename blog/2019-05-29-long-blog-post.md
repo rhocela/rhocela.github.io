@@ -1,13 +1,11 @@
 ---
-slug: long-blog-post
-title: Long Blog Post
-authors: yangshun
-tags: [hello, docusaurus]
+slug: placeholder-post-2
+title: Blog Post Title 2
+authors: rhocela
+tags: [placeholder]
 ---
 
-This is the summary of a very long blog post,
-
-Use a `<!--` `truncate` `-->` comment to limit blog post size in the list view.
+This is a placeholder for a future blog post. Stay tuned for insights on technical writing, documentation best practices, and content strategy.
 
 <!-- truncate -->
 

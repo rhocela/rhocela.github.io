@@ -43,6 +43,8 @@ const config: Config = {
         docs: false, // Disabled - using custom pages instead
         blog: {
           showReadingTime: true,
+          blogSidebarCount: 'ALL',
+          blogSidebarTitle: 'All Posts',
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
@@ -53,6 +55,8 @@ const config: Config = {
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
+          // Hide author info since all posts are by the same author
+          authorsMapPath: 'authors.yml',
         },
         theme: {
           customCss: './src/css/custom.css',

@@ -1,12 +1,12 @@
 ---
-slug: first-blog-post
-title: First Blog Post
-authors: [slorber, yangshun]
-tags: [hola, docusaurus]
+slug: placeholder-post-1
+title: Blog Post Title 1
+authors: rhocela
+tags: [placeholder]
 ---
 
-Lorem ipsum dolor sit amet...
+This is a placeholder for a future blog post. Stay tuned for insights on technical writing, documentation best practices, and content strategy.
 
 <!-- truncate -->
 
-...consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet
+More content coming soon.
