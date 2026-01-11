@@ -144,7 +144,7 @@ export default function Testimonials(): ReactNode {
 
           <section style={{marginTop: '3rem'}}>
             <Heading as="h2" style={{marginBottom: '1.5rem'}}>
-              More Professional References
+              More professional references
             </Heading>
             <p style={{fontSize: '1rem', marginBottom: '1.5rem', color: 'var(--ifm-color-emphasis-700)'}}>
               Additional references available upon request.
@@ -161,7 +161,7 @@ export default function Testimonials(): ReactNode {
             borderRadius: '8px',
             textAlign: 'center',
           }}>
-            <Heading as="h2">Ready to Create Something Great Together?</Heading>
+            <Heading as="h2">Ready to create something great together?</Heading>
             <p style={{marginTop: '1rem', marginBottom: '1.5rem'}}>
               I'd love to hear about your project and how I can help bring clarity to your documentation and content.
             </p>

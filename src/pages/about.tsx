@@ -1,6 +1,7 @@
 import type {ReactNode} from 'react';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
+import BrandLogos from '@site/src/components/BrandLogos';
 
 export default function About(): ReactNode {
   return (
@@ -23,42 +24,32 @@ export default function About(): ReactNode {
               }}
             />
           </div>
-          <Heading as="h1">About Me</Heading>
+          <Heading as="h1">About me</Heading>
           
           <section style={{marginTop: '2rem', lineHeight: '1.8'}}>
             <p>
-              I treat documentation as a product, and I advocate for developing it with the same high 
-              standards as the core product, using processes like docs-as-code.
+              Senior Technical Writer with a proven track record of building and leading documentation functions from the ground up.
             </p>
 
             <p>
-              Throughout my experience, I have worked as an individual contributor, a team member, and a team lead.
+              I establish documentation practices and standards while managing the entire documentation lifecycle—from planning to publication. I treat documentation as a product and advocate for developing it with the same high standards as the core product, using modern processes like docs-as-code.
             </p>
 
             <p>
-              I transform complex ideas, blending technical expertise and creative flair, to produce clear 
-              and captivating content. I write for audiences of varying technical skills—from engineers to 
-              sales professionals and end users.
+              I transform complex ideas—blending technical expertise with clear, accessible content—to reach diverse audiences. Whether writing for engineers, sales professionals, or end users, I believe the true value of documentation lies in its usability and user experience.
             </p>
 
             <p>
-              Apart from accuracy and completeness, I believe that the key value of a document lies in its 
-              usability. Good documentation comes in various formats, delivering the best user journey and experience.
+              Passionate about fostering a culture of excellence through knowledge sharing and best practices. I'm also experienced as a Scrum Master, driving continuous improvement and cross-functional collaboration.
             </p>
 
             <p>
-              Beyond technical writing, I've successfully co-managed SaaS implementation projects across Southeast 
-              Asia, engaging with clients from requirement gathering to the go-live phase.
-            </p>
-
-            <p>
-              I hold a Bachelor of Science degree in Computer Engineering. Experienced and committed to growth, 
-              I value ownership, reliability, and continuous improvement.
+              Looking to connect with teams building great products and recognizing that great documentation is an essential part of that success.
             </p>
           </section>
 
           <section style={{marginTop: '3rem'}}>
-            <Heading as="h2">My Documentation Philosophy</Heading>
+            <Heading as="h2">My documentation philosophy</Heading>
             <div style={{
               padding: '1.5rem',
               backgroundColor: 'var(--ifm-color-info-light)',
@@ -85,7 +76,7 @@ export default function About(): ReactNode {
           </section>
 
           <section style={{marginTop: '3rem'}}>
-            <Heading as="h2">Current Role</Heading>
+            <Heading as="h2">Current role</Heading>
             <div style={{
               padding: '1.5rem',
               backgroundColor: 'var(--ifm-color-primary-lightest)',
@@ -136,7 +127,7 @@ export default function About(): ReactNode {
                 </ul>
               </div>
               <div>
-                <Heading as="h3">Content & Communication</Heading>
+                <Heading as="h3">Content & communication</Heading>
                 <ul>
                   <li>Technical Writing</li>
                   <li>External Communications</li>
@@ -147,7 +138,7 @@ export default function About(): ReactNode {
                 </ul>
               </div>
               <div>
-                <Heading as="h3">Leadership & Agile</Heading>
+                <Heading as="h3">Leadership & agile</Heading>
                 <ul>
                   <li>Scrum Master</li>
                   <li>Team Coaching</li>
@@ -161,7 +152,7 @@ export default function About(): ReactNode {
           </section>
 
           <section style={{marginTop: '3rem'}}>
-            <Heading as="h2">Tools & Technologies</Heading>
+            <Heading as="h2">Tools & technologies</Heading>
             <p style={{marginTop: '1rem'}}>
               Docs-as-Code • API Documentation Tools • Readme.io • Camtasia Studio • 
               Content Management Systems • Agile/Scrum • Project Management • 
@@ -177,7 +168,7 @@ export default function About(): ReactNode {
           </section>
 
           <section style={{marginTop: '3rem', paddingBottom: '2rem'}}>
-            <Heading as="h2">Get My CV</Heading>
+            <Heading as="h2">Get my CV</Heading>
             <p>
               <a 
                 href="https://drive.google.com/file/d/1GRXUg1uiGIPiXQtlNAslWxp3eoYxbnx_/view?usp=sharing" 
@@ -198,6 +189,8 @@ export default function About(): ReactNode {
             </p>
           </section>
         </div>
+        
+        <BrandLogos />
       </main>
     </Layout>
   );

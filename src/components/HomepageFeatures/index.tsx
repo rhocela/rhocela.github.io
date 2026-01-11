@@ -11,7 +11,7 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Technical Documentation',
+    title: 'Technical documentation',
     image: require('@site/static/img/technical-documentation.png').default,
     description: (
       <>
@@ -22,7 +22,7 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Cross-functional Collaboration',
+    title: 'Cross-functional collaboration',
     image: require('@site/static/img/collaboration.png').default,
     description: (
       <>
@@ -33,7 +33,7 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Agile Leadership',
+    title: 'Agile leadership',
     image: require('@site/static/img/agile.png').default,
     description: (
       <>

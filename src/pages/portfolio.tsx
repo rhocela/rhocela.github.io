@@ -8,6 +8,12 @@ const slugify = (text: string) =>
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/(^-|-$)/g, '');
 
+const toSentenceCase = (text: string) => {
+  if (!text) return text;
+  const lower = text.toLowerCase();
+  return lower.charAt(0).toUpperCase() + lower.slice(1);
+};
+
 interface Project {
   title: string;
   description: string;
@@ -183,7 +189,7 @@ export default function Portfolio(): ReactNode {
     <Layout title="Portfolio" description="Rhocela Pasigna's Portfolio">
       <main style={{padding: '2rem 0'}}>
         <div className="container">
-          <Heading as="h1">My Portfolio</Heading>
+          <Heading as="h1">My portfolio</Heading>
           <p style={{fontSize: '1.1rem', marginTop: '1rem', marginBottom: '2rem'}}>
             A showcase of my work across API documentation, marketing content, and video production.
             Each project represents my commitment to creating clear, user-focused, and impactful content.
@@ -218,7 +224,7 @@ export default function Portfolio(): ReactNode {
           {categories.map((category) => (
             <section key={category} id={slugify(category)} style={{marginBottom: '3rem'}}>
               <Heading as="h2" style={{marginBottom: '1.5rem', paddingBottom: '0.5rem', borderBottom: '2px solid var(--ifm-color-primary)'}}>
-                {category}
+                {toSentenceCase(category)}
               </Heading>
               {projects
                 .filter((p) => p.category === category)
@@ -230,7 +236,7 @@ export default function Portfolio(): ReactNode {
 
           <section id="publications" style={{marginBottom: '3rem'}}>
             <Heading as="h2" style={{marginBottom: '1.5rem', paddingBottom: '0.5rem', borderBottom: '2px solid var(--ifm-color-primary)'}}>
-              Publications
+              Publications & thought leadership
             </Heading>
             
             {/* Book 1 */}
@@ -333,7 +339,7 @@ export default function Portfolio(): ReactNode {
             borderRadius: '8px',
             textAlign: 'center',
           }}>
-            <Heading as="h2">Interested in Working Together?</Heading>
+            <Heading as="h2">Interested in working together?</Heading>
             <p style={{marginTop: '1rem', marginBottom: '1.5rem'}}>
               I'm always interested in new opportunities and collaborations. Let's connect!
             </p>
