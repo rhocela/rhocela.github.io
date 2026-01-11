@@ -5,6 +5,7 @@ import Heading from '@theme/Heading';
 
 const logos = [
   { src: '/img/brands-ive-worked-with/1-lnds.png', alt: 'LNDS' },
+  { src: '/img/brands-ive-worked-with/2-mobilab.png', alt: 'Mobilab' },
   { src: '/img/brands-ive-worked-with/2-zyllem.png', alt: 'Zyllem' },
   { src: '/img/brands-ive-worked-with/3-intel.png', alt: 'Intel' },
   { src: '/img/brands-ive-worked-with/4-logo.png', alt: 'Bosch' },

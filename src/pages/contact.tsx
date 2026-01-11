@@ -7,7 +7,8 @@ export default function Contact(): ReactNode {
     <Layout title="Contact" description="Get in touch with Rhocela Pasigna">
       <main style={{padding: '2rem 0'}}>
         <div className="container">
-          <Heading as="h1">Get In Touch</Heading>
+          <Heading as="h1">Get in touch</Heading>
+                    {/* <Heading as="h1">Get in touch</Heading> */}
           <p style={{fontSize: '1.1rem', marginTop: '1rem', marginBottom: '3rem'}}>
             Have a project in mind or want to discuss opportunities? I'd love to hear from you!
           </p>
@@ -66,7 +67,7 @@ export default function Contact(): ReactNode {
                     fontSize: '1.1rem',
                   }}
                 >
-                  Connect with Me
+                  Connect with me
                 </a>
               </p>
               <p style={{fontSize: '0.9rem', color: 'var(--ifm-color-emphasis-700)'}}>
@@ -95,7 +96,7 @@ export default function Contact(): ReactNode {
                     fontSize: '1.1rem',
                   }}
                 >
-                  View GitHub Profile
+                  View GitHub profile
                 </a>
               </p>
               <p style={{fontSize: '0.9rem', color: 'var(--ifm-color-emphasis-700)'}}>
@@ -124,7 +125,7 @@ export default function Contact(): ReactNode {
                     fontSize: '1.1rem',
                   }}
                 >
-                  View GitLab Profile
+                  View GitLab profile
                 </a>
               </p>
               <p style={{fontSize: '0.9rem', color: 'var(--ifm-color-emphasis-700)'}}>
@@ -139,14 +140,12 @@ export default function Contact(): ReactNode {
             borderRadius: '8px',
             marginTop: '2rem',
           }}>
-            <Heading as="h2">What I'm Looking For</Heading>
+            <Heading as="h2">What I'm looking for</Heading>
             <ul style={{lineHeight: '1.8', marginTop: '1rem', fontSize: '1.05rem'}}>
-              <li>Freelance technical writing projects</li>
-              <li>API documentation and developer experience</li>
-              <li>Content strategy and marketing materials</li>
-              <li>Video tutorials and multimedia content</li>
+              <li>Technical writing projects</li>
               <li>Full-time or contract-based roles</li>
-              <li>Collaboration with SaaS and tech companies</li>
+              <li>Documentation lead or content strategy roles</li>
+              <li>Collaboration with data or tech companies</li>
             </ul>
           </section>
 
@@ -157,9 +156,9 @@ export default function Contact(): ReactNode {
             borderRadius: '8px',
             textAlign: 'center',
           }}>
-            <Heading as="h2">Download My CV</Heading>
+            <Heading as="h2">Download my CV</Heading>
             <p style={{marginTop: '1rem', marginBottom: '1.5rem'}}>
-              Get a comprehensive overview of my experience, skills, and achievements.
+              Get a printable copy of my experience, skills, and achievements.
             </p>
             <a 
               href="https://drive.google.com/file/d/1GRXUg1uiGIPiXQtlNAslWxp3eoYxbnx_/view?usp=sharing"
@@ -175,7 +174,7 @@ export default function Contact(): ReactNode {
                 fontWeight: 'bold',
               }}
             >
-              Download CV
+              Download my CV
             </a>
           </section>
         </div>

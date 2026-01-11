@@ -78,10 +78,10 @@ const config: Config = {
         src: 'img/tech-writer-icon-png.ico',
       },
       items: [
-        {to: '/about', label: 'About', position: 'left'},
         {to: '/portfolio', label: 'Portfolio', position: 'left'},
-        {to: '/testimonials', label: 'Testimonials', position: 'left'},
         {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/testimonials', label: 'Testimonials', position: 'left'},
+        {to: '/about', label: 'About', position: 'left'},
         {to: '/contact', label: 'Contact', position: 'left'},
         {
           href: 'https://github.com/rhocela',

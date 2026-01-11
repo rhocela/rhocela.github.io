@@ -177,7 +177,7 @@ export default function Testimonials(): ReactNode {
                 fontWeight: 'bold',
               }}
             >
-              Send Me a Message
+              Send me a message
             </a>
           </section>
         </div>
