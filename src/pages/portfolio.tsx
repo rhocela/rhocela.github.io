@@ -354,9 +354,32 @@ export default function Portfolio(): ReactNode {
                     {categoryCounts[category]} project{categoryCounts[category] === 1 ? '' : 's'} focused on {category.toLowerCase()}.
                   </p>
                   {category === 'User & technical docs' && (
-                    <p style={{marginTop: 0, marginBottom: '1rem', color: 'var(--ifm-color-emphasis-700)'}}>
-                      Includes end-user guides, developer guides, and deployment guides to cover both user and technical audiences.
-                    </p>
+                    <>
+                      <p style={{marginTop: 0, marginBottom: '1rem', color: 'var(--ifm-color-emphasis-700)'}}>
+                        Includes end-user guides, developer guides, and deployment guides to cover both user and technical audiences.
+                      </p>
+                      <div style={{
+                        marginTop: '0.5rem',
+                        marginBottom: '1.25rem',
+                        padding: '1rem 1.25rem',
+                        border: '2px solid var(--ifm-color-info)',
+                        borderRadius: '8px',
+                        backgroundColor: 'var(--ifm-color-info-contrast-background)',
+                        display: 'flex',
+                        gap: '0.75rem',
+                        alignItems: 'start'
+                      }}>
+                        <span style={{fontSize: '1.25rem', flexShrink: 0}}>ℹ️</span>
+                        <div>
+                          <strong style={{display: 'block', marginBottom: '0.35rem', color: 'var(--ifm-color-info-dark)'}}>
+                            Additional documentation available upon request
+                          </strong>
+                          <span style={{color: 'var(--ifm-color-emphasis-800)', lineHeight: 1.6}}>
+                            I have additional user and technical documentation that isn't publicly available. During our meeting, I'm happy to share templatised versions (non-confidential) to respect client privacy and agreements.
+                          </span>
+                        </div>
+                      </div>
+                    </>
                   )}
                   <div style={{
                     display: 'grid',
