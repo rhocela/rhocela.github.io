@@ -53,10 +53,7 @@ function HomepageHeader() {
         </div>
 
         <p style={{fontSize: '1.1rem', maxWidth: '720px', margin: '20px auto', lineHeight: '1.7'}}>
-          Senior Technical Writer II at Luxembourg National Data Services (LNDS). I treat documentation as a product. I build and lead 
-          documentation functions from the ground up, establishing practices, standards, and processes 
-          like docs-as-code. Managing the entire documentation lifecycle while fostering a culture of 
-          excellence through knowledge sharing. Also serving as Scrum Master to drive continuous improvement.
+          Senior Technical Writer II at Luxembourg National Data Services (LNDS). I treat documentation as a product and build documentation functions from the ground up. In my current role, I establish quality standards and processes aligned with Agile methodologies and docs-as-code principles. I manage the entire documentation lifecycle and serve as Scrum Master to a cross-functional team to drive continuous improvement.
         </p>
         <div className={styles.buttons}>
           <Link
