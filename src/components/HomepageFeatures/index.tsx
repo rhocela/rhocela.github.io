@@ -15,9 +15,9 @@ const FeatureList: FeatureItem[] = [
     image: require('@site/static/img/technical-documentation.png').default,
     description: (
       <>
-        Comprehensive documentation including API guides, system operations manuals, 
-        integration guides, and user manuals. Creating and managing documentation libraries 
-        that are up-to-date, accessible, and aligned with project standards.
+        I build documentation systems that engineers actually use. From API references to 
+        operational guides, I create content that reduces support tickets and speeds up 
+        onboarding. Docs-as-code workflows keep everything current and version-controlled.
       </>
     ),
   },
@@ -26,9 +26,9 @@ const FeatureList: FeatureItem[] = [
     image: require('@site/static/img/collaboration.png').default,
     description: (
       <>
-        Working closely with Development, Data Science, and Communications teams to 
-        gather requirements and translate complex technical concepts into clear, 
-        user-friendly content for both internal and external audiences.
+        I bridge technical and non-technical teams, turning discussions into 
+        actionable documentation. By working directly with technical teams across the stack, I catch 
+        knowledge gaps and create content that serves both internal teams and end users.
       </>
     ),
   },
@@ -37,9 +37,9 @@ const FeatureList: FeatureItem[] = [
     image: require('@site/static/img/agile.png').default,
     description: (
       <>
-        Serving as Scrum Master, facilitating agile ceremonies and promoting collaboration. 
-        Coaching teams on technical writing best practices while fostering a culture of 
-        continuous learning and improvement.
+        As Scrum Master, I keep teams moving—identifying blockers, managing dependencies, 
+        and surfacing risks before they derail sprints. I facilitate standups and retrospectives 
+        that actually lead to action, not just discussion.
       </>
     ),
   },
