@@ -1,5 +1,6 @@
 import type {ReactNode} from 'react';
 import clsx from 'clsx';
+import Link from '@docusaurus/Link';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
@@ -7,6 +8,8 @@ type FeatureItem = {
   title: string;
   image: string;
   description: ReactNode;
+  buttonText: string;
+  buttonLink: string;
 };
 
 const FeatureList: FeatureItem[] = [
@@ -20,6 +23,8 @@ const FeatureList: FeatureItem[] = [
         onboarding. Docs-as-code workflows keep everything current and version-controlled.
       </>
     ),
+    buttonText: 'View portfolio',
+    buttonLink: '/portfolio',
   },
   {
     title: 'Cross-functional collaboration',
@@ -31,29 +36,42 @@ const FeatureList: FeatureItem[] = [
         knowledge gaps and create content that serves both internal teams and end users.
       </>
     ),
+    buttonText: 'Read testimonials',
+    buttonLink: '/testimonials',
   },
   {
     title: 'Agile leadership',
     image: require('@site/static/img/agile.png').default,
     description: (
       <>
-        As Scrum Master, I keep teams moving—identifying blockers, managing dependencies, 
-        and surfacing risks before they derail sprints. I facilitate standups and retrospectives 
-        that actually lead to action, not just discussion.
+        As Scrum Master, I keep teams moving—identifying blockers, managing dependencies, escalating issues,
+        and surfacing risks before they derail sprints. I facilitate standups and Agile ceremonies 
+        that lead to action, not just discussion.
       </>
     ),
+    buttonText: 'Learn more',
+    buttonLink: '/about',
   },
 ];
 
-function Feature({title, image, description}: FeatureItem) {
+function Feature({title, image, description, buttonText, buttonLink}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <img className={styles.featureImg} src={image} alt={title} />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
+      <div className={styles.featureCard}>
+        <div className="text--center">
+          <img className={styles.featureImg} src={image} alt={title} />
+        </div>
+        <div className="text--center padding-horiz--md">
+          <Heading as="h3">{title}</Heading>
+          <p>{description}</p>
+          <div style={{marginTop: '1.5rem'}}>
+            <Link
+              className="button button--primary button--sm"
+              to={buttonLink}>
+              {buttonText}
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   );
