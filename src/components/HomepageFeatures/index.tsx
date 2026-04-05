@@ -44,9 +44,8 @@ const FeatureList: FeatureItem[] = [
     emoji: '⚡',
     description: (
       <>
-        From team member and individual contributor to documentation lead and Scrum Master—
-        experience across multiple roles provides deep insights into team 
-        dynamics, leadership, collaboration, and Agile practices.
+      I've worked through a spectrum of roles—as a team member, documentation lead, individual contributor, and Scum Master.
+       This experience has given me insights into team dynamics, leadership, and collaborating effectively across roles, seniority levels, and working styles.
       </>
     ),
     buttonText: 'Learn more',
@@ -56,10 +55,9 @@ const FeatureList: FeatureItem[] = [
     title: 'Global perspective',
     emoji: '🌍',
     description: (
-      <>
-        I've collaborated with teams across Asia, Europe, Americas, and beyond—adapting to 
-        different working styles, communication preferences, and cultural expectations. This 
-        flexibility makes me effective in any team environment and strengthens how I document for diverse audiences.
+      <> 
+      My career has taken me across Asia and Europe, working with individuals and partnering with clients from different cultures, languages, and backgrounds.  
+      I adapt well to different communication styles and cultural expectations, and this flexibility makes me effective in any team environment and strengthens how I document for diverse audiences.
       </>
     ),
     buttonText: 'See my background',
@@ -70,9 +68,9 @@ const FeatureList: FeatureItem[] = [
     emoji: '🏢',
     description: (
       <>
-        Experience spans marketing consulting for IT platforms, logistics SaaS, data integration 
-        and cloud adoption, and currently government data services. Each industry brings different 
-        technical challenges and user needs—translating complex domain knowledge into clear documentation is the constant.
+        My experience spans writing for marketing consulting for business IT products, logistics SaaS platforms, data integration 
+        and cloud adoption, and currently government data services. Each industry has brought different technical challenges and learning opportunities, 
+        with the common thread being the need to translate complex domain knowledge into usable, effective documentation. 
       </>
     ),
     buttonText: 'Explore experience',

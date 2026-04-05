@@ -53,7 +53,9 @@ function HomepageHeader() {
         </div>
 
         <p style={{fontSize: '1.1rem', maxWidth: '720px', margin: '20px auto', lineHeight: '1.7'}}>
-          Senior Technical Writer II at Luxembourg National Data Services (LNDS). I treat documentation as a product and build documentation functions from the ground up. In my current role, I establish quality standards and processes aligned with Agile methodologies and docs-as-code principles. I manage the entire documentation lifecycle and serve as Scrum Master to a cross-functional team to drive continuous improvement.
+          I build documentation systems from the ground up—from defining editorial standards to implementing 
+          docs-as-code workflows and choosing tools that fit. I create content that solves real problems for technical and non-technical users. At Luxembourg National Data Services (LNDS), I own the 
+          complete documentation lifecycle for operational documentation, while serving as Scrum Master to keep cross-functional teams aligned and moving forward.
         </p>
         <div style={{
           display: 'flex',
@@ -65,7 +67,10 @@ function HomepageHeader() {
         }}>
           <Link
             className="button button--secondary button--lg"
-            to="/portfolio">
+            to="/portfolio"
+            style={{
+              border: '2px solid rgba(255, 255, 255, 0.3)'
+            }}>
             View my portfolio
           </Link>
           <a
@@ -73,10 +78,26 @@ function HomepageHeader() {
             target="_blank"
             rel="noopener noreferrer"
             style={{
-              textDecoration: 'underline',
-              fontSize: '1rem',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.5rem',
+              padding: '0.75rem 1.5rem',
+              backgroundColor: 'transparent',
               color: 'white',
-              opacity: 0.9
+              textDecoration: 'none',
+              borderRadius: '8px',
+              fontWeight: 600,
+              fontSize: '1rem',
+              border: '1px solid rgba(255, 255, 255, 0.6)',
+              transition: 'all 0.2s ease'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.15)';
+              e.currentTarget.style.transform = 'translateY(-2px)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = 'transparent';
+              e.currentTarget.style.transform = 'translateY(0)';
             }}>
             Download CV
           </a>
