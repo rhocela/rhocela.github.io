@@ -53,7 +53,9 @@ function HomepageHeader() {
         </div>
 
         <p style={{fontSize: '1.1rem', maxWidth: '720px', margin: '20px auto', lineHeight: '1.7'}}>
-          Senior Technical Writer II at Luxembourg National Data Services (LNDS). I treat documentation as a product and build documentation functions from the ground up. In my current role, I establish quality standards and processes aligned with Agile methodologies and docs-as-code principles. I manage the entire documentation lifecycle and serve as Scrum Master to a cross-functional team to drive continuous improvement.
+          I build documentation systems from the ground up—from defining editorial standards to implementing 
+          docs-as-code workflows and choosing tools that fit. I create content that solves real problems for technical and non-technical users. At Luxembourg National Data Services (LNDS), I own the 
+          complete documentation lifecycle for operational documentation, while serving as Scrum Master to keep cross-functional teams aligned and moving forward.
         </p>
         <div style={{
           display: 'flex',
