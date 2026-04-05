@@ -29,47 +29,86 @@ interface Project {
 }
 
 const projects: Project[] = [
+  // End-User Documentation
   {
-    title: 'GDI Portal Documentation',
-    description: 'Comprehensive documentation site for the Genomic Data Infrastructure (GDI) Portal, a government platform for managing access to genomic data. Developed from scratch using Docusaurus, including user guide, deployment guide, and developer guide. Designed complete content strategy, information architecture, and multi-audience structure. Managing end-to-end maintenance and updates.',
-    category: 'User & technical docs',
+    title: 'GDI Portal - User Guides',
+    description: 'Comprehensive user documentation for the Genomic Data Infrastructure (GDI) Portal, a government platform for managing access to genomic data. Created guides for multiple user personas: data users searching and requesting datasets, and catalogue managers publishing and managing data. Developed complete content strategy and information architecture using Docusaurus.',
+    category: 'End-User Documentation',
     role: 'Lead Technical Writer & Content Strategist',
     link: 'https://genomicdatainfrastructure.github.io/gdi-userportal-frontend/',
     repoLink: 'https://github.com/GenomicDataInfrastructure/gdi-userportal-frontend',
     external: true,
     resources: [
       {label: 'User guide (data users)', href: 'https://genomicdatainfrastructure.github.io/gdi-userportal-frontend/welcome-data-users'},
-      {label: 'User guide (managers)', href: 'https://genomicdatainfrastructure.github.io/gdi-userportal-frontend/welcome-catalogue-managers'},
-      {label: 'Deployment guide', href: 'https://genomicdatainfrastructure.github.io/gdi-userportal-frontend/welcome-system-admins'},
-      {label: 'Developer guide', href: 'https://genomicdatainfrastructure.github.io/gdi-userportal-frontend/welcome-developers'},
+      {label: 'User guide (catalogue managers)', href: 'https://genomicdatainfrastructure.github.io/gdi-userportal-frontend/welcome-catalogue-managers'},
     ],
   },
   {
-    title: 'Metadata Capture Documentation',
-    description: "Full-scale documentation site for Luxembourg's Metadata Capture platform, a tool for managing and sharing datasets for government and public institutions. Built from scratch with Docusaurus, containing user guide, system admin deployment guide, and developer guide. Designed content strategy and structure for complete documentation lifecycle management.",
-    category: 'User & technical docs',
+    title: 'Metadata Capture - User Guide',
+    description: "End-user documentation for Luxembourg's Metadata Capture platform, a tool for managing and sharing datasets for government and public institutions. Created comprehensive step-by-step guides for dataset creation, metadata management, and collaboration workflows. Built from scratch with Docusaurus as part of a complete documentation lifecycle management strategy.",
+    category: 'End-User Documentation',
     role: 'Lead Technical Writer & Content Strategist',
     link: 'https://docs.metadata.lnds.lu/',
     repoLink: 'https://gitlab.com/lnds-lu/tooling/dca-metadata-capture',
     external: true,
     resources: [
       {label: 'User guide', href: 'https://docs.metadata.lnds.lu/user-guide/intro'},
-      {label: 'Deployment guide', href: 'https://docs.metadata.lnds.lu/system-admin/'},
-      {label: 'Developer guide', href: 'https://docs.metadata.lnds.lu/developer/'},
     ],
+  },
+  
+  // Developer Documentation
+  {
+    title: 'GDI Portal - Developer Guide',
+    description: 'Technical documentation for developers working on the Genomic Data Infrastructure (GDI) Portal. Covers architecture, setup instructions, API integration, component documentation, and contribution guidelines. Designed to enable rapid onboarding and consistent development practices.',
+    category: 'Developer Documentation',
+    role: 'Lead Technical Writer & Content Strategist',
+    link: 'https://genomicdatainfrastructure.github.io/gdi-userportal-frontend/welcome-developers',
+    repoLink: 'https://github.com/GenomicDataInfrastructure/gdi-userportal-frontend',
+    external: true,
+  },
+  {
+    title: 'Metadata Capture - Developer Guide',
+    description: "Developer documentation for extending and customizing Luxembourg's Metadata Capture platform. Includes API documentation, development environment setup, architecture overview, and contribution guidelines for the open-source project.",
+    category: 'Developer Documentation',
+    role: 'Lead Technical Writer & Content Strategist',
+    link: 'https://docs.metadata.lnds.lu/developer/',
+    repoLink: 'https://gitlab.com/lnds-lu/tooling/dca-metadata-capture',
+    external: true,
   },
   {
     title: 'Zyllem API Documentation and User Guide',
     description: 'A comprehensive step-by-step guide to integrating with Zyllem, a software solution for last-mile distribution. Created using Readme.io with clear examples and integration instructions.',
-    category: 'API Documentation',
+    category: 'Developer Documentation',
     role: 'Technical Writer',
     link: 'https://developer.zyllem.com/',
     external: true,
   },
+  
+  // Deployment guide
+  {
+    title: 'GDI Portal - Deployment Guide',
+    description: 'System administration documentation for deploying and configuring the Genomic Data Infrastructure (GDI) Portal. Covers installation, configuration, environment setup, security considerations, monitoring, and troubleshooting for production environments.',
+    category: 'Deployment guide',
+    role: 'Lead Technical Writer & Content Strategist',
+    link: 'https://genomicdatainfrastructure.github.io/gdi-userportal-frontend/welcome-system-admins',
+    repoLink: 'https://github.com/GenomicDataInfrastructure/gdi-userportal-frontend',
+    external: true,
+  },
+  {
+    title: 'Metadata Capture - Deployment Guide',
+    description: "System administration documentation for deploying Luxembourg's Metadata Capture platform. Includes installation instructions, server configuration, database setup, security hardening, backup strategies, and operational maintenance procedures.",
+    category: 'Deployment guide',
+    role: 'Lead Technical Writer & Content Strategist',
+    link: 'https://docs.metadata.lnds.lu/system-admin/',
+    repoLink: 'https://gitlab.com/lnds-lu/tooling/dca-metadata-capture',
+    external: true,
+  },
+  
+  // Marketing & sales
   {
     title: 'Intel Whitepaper',
     description: "A detailed whitepaper about an award-winning Intel-powered solution designed by one of Intel's channel partners. Demonstrates technical expertise in B2B content creation.",
-    category: 'Marketing content',
+    category: 'Marketing & sales',
     role: 'Technical Writer & Content Developer',
     link: 'https://drive.google.com/open?id=0BzvSeh0uSLpKaWxMbFBVSzh4ZUk',
     external: true,
@@ -77,31 +116,15 @@ const projects: Project[] = [
   {
     title: 'Intel SSD Brochure',
     description: 'A three-fold brochure targeted at business owners and IT decision makers. Explains enterprise-grade Intel SSD benefits using a well-trained marathon runner analogy for easy understanding.',
-    category: 'Marketing content',
+    category: 'Marketing & sales',
     role: 'Content Developer & Copywriter',
     link: 'https://drive.google.com/file/d/0BzvSeh0uSLpKNHJ4YVZYLTNrVDQ/view',
     external: true,
   },
   {
-    title: 'Zyllem Video Tutorial Series',
-    description: 'Step-by-step tutorials on integrating your Shopify store with Zyllem using a plugin. Produced with storyboard, animation, and voice-over using Camtasia Studio.',
-    category: 'Video & Multimedia',
-    role: 'Video Producer & Scriptwriter',
-    link: 'https://www.youtube.com/channel/UC3BdqwCRUBn0OF2A9MFoZ3A',
-    external: true,
-  },
-  {
-    title: 'Zyllem Promotional Video',
-    description: "A short promotional video showcasing Zyllem's Batch Delivery feature. Produced using Camtasia Studio with professional storyboarding, animation, and voice-over.",
-    category: 'Video & Multimedia',
-    role: 'Video Producer & Animator',
-    link: 'https://www.youtube.com/channel/UC3BdqwCRUBn0OF2A9MFoZ3A',
-    external: true,
-  },
-  {
     title: 'Landing Pages',
     description: 'Developed multiple high-converting landing pages with copywriting and publication. Led the complete sales cycle including lead collection and optimization.',
-    category: 'Marketing content',
+    category: 'Marketing & sales',
     role: 'Content Developer & Copywriter',
     link: 'https://www.zyllem.com/logistics-management',
     external: true,
@@ -109,7 +132,7 @@ const projects: Project[] = [
   {
     title: 'Zyllem Whitepaper',
     description: 'A comprehensive whitepaper on how Zyllem enables digital transformation for enterprise distribution networks. Designed in A5 booklet format for professional presentation.',
-    category: 'Marketing content',
+    category: 'Marketing & sales',
     role: 'Technical Writer',
     link: 'https://drive.google.com/open?id=0BzvSeh0uSLpKZFZlWVB2dlJpUE0',
     external: true,
@@ -117,15 +140,33 @@ const projects: Project[] = [
   {
     title: 'Intel-Windows Tablet Tearsheet',
     description: "A consumer-facing tearsheet on Intel-based Windows 8 tablets highlighting unique capabilities enabled by the operating system and processor. Targeted at end-users.",
-    category: 'Marketing content',
+    category: 'Marketing & sales',
     role: 'Content Developer',
     link: 'https://drive.google.com/file/d/0BzvSeh0uSLpKMzVreWl6WlF3Mnc/view?usp=sharing',
+    external: true,
+  },
+  
+  // Video & multimedia
+  {
+    title: 'Zyllem Video Tutorial Series',
+    description: 'Step-by-step tutorials on integrating your Shopify store with Zyllem using a plugin. Produced with storyboard, animation, and voice-over using Camtasia Studio.',
+    category: 'Video & multimedia',
+    role: 'Video Producer & Scriptwriter',
+    link: 'https://www.youtube.com/channel/UC3BdqwCRUBn0OF2A9MFoZ3A',
+    external: true,
+  },
+  {
+    title: 'Zyllem Promotional Video',
+    description: "A short promotional video showcasing Zyllem's Batch Delivery feature. Produced using Camtasia Studio with professional storyboarding, animation, and voice-over.",
+    category: 'Video & multimedia',
+    role: 'Video Producer & Animator',
+    link: 'https://www.youtube.com/channel/UC3BdqwCRUBn0OF2A9MFoZ3A',
     external: true,
   },
   {
     title: 'Intel Animated Web Banners',
     description: 'Animated web banners showcasing 2-in-1 devices powered by Intel Core M processors. Created for web campaigns with compelling visuals and messaging.',
-    category: 'Video & Multimedia',
+    category: 'Video & multimedia',
     role: 'Content Developer & Designer',
     link: 'https://www.youtube.com/watch?v=P-TPZ3iDF3w',
     external: true,
@@ -135,53 +176,66 @@ const projects: Project[] = [
 function ProjectCard({ project }: { project: Project }) {
   return (
     <div style={{
+      background: 'var(--ifm-color-emphasis-0)',
+      borderRadius: '16px',
+      padding: '2rem',
+      boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
       border: '1px solid var(--ifm-color-emphasis-200)',
-      borderRadius: '8px',
-      padding: '1.5rem',
-      marginBottom: '1.5rem',
-      backgroundColor: 'var(--ifm-color-emphasis-50)',
-      transition: 'transform 0.2s, box-shadow 0.2s',
+      transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+      height: '100%',
+      display: 'flex',
+      flexDirection: 'column'
     }}
       onMouseEnter={(e) => {
         const elem = e.currentTarget;
         elem.style.transform = 'translateY(-4px)';
-        elem.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
+        elem.style.boxShadow = '0 8px 20px rgba(0,0,0,0.12)';
       }}
       onMouseLeave={(e) => {
         const elem = e.currentTarget;
         elem.style.transform = 'translateY(0)';
-        elem.style.boxShadow = 'none';
+        elem.style.boxShadow = '0 2px 8px rgba(0,0,0,0.08)';
       }}
     >
-      <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'start', marginBottom: '0.5rem'}}>
-        <Heading as="h4" style={{margin: 0}}>{project.title}</Heading>
-        <span style={{
-          backgroundColor: 'var(--ifm-color-primary)',
-          color: 'white',
-          padding: '0.25rem 0.75rem',
-          borderRadius: '20px',
-          fontSize: '0.85rem',
-          whiteSpace: 'nowrap',
-          marginLeft: '1rem',
-        }}>
-          {project.category}
-        </span>
+      <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'start', marginBottom: '1rem', gap: '1rem'}}>
+        <Heading as="h3" style={{margin: 0, fontSize: '1.2rem', flex: 1}}>{project.title}</Heading>
       </div>
-      <p style={{color: 'var(--ifm-color-emphasis-700)', marginBottom: '0.75rem', fontSize: '0.9rem'}}>
-        <strong>Role:</strong> {project.role}
+      <p style={{
+        color: 'var(--ifm-color-primary-dark)',
+        marginBottom: '1rem',
+        fontSize: '0.95rem',
+        fontWeight: 600
+      }}>
+        {project.role}
       </p>
-      <p style={{marginBottom: '1rem', lineHeight: '1.6'}}>
+      <p style={{marginBottom: '1.5rem', lineHeight: '1.7', flex: 1}}>
         {project.description}
       </p>
       {project.resources && project.resources.length > 0 && (
-        <ul style={{marginTop: 0, marginBottom: '0.85rem', paddingLeft: '1.1rem', color: 'var(--ifm-color-emphasis-700)'}}>
+        <ul style={{
+          margin: '0 0 1.5rem 0',
+          paddingLeft: '1.25rem',
+          lineHeight: '1.7'
+        }}>
           {project.resources.map((res) => (
-            <li key={res.href} style={{marginBottom: '0.25rem'}}>
+            <li key={res.href} style={{marginBottom: '0.5rem'}}>
               <a
                 href={res.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{color: 'var(--ifm-color-primary)', fontWeight: 600, textDecoration: 'none'}}
+                style={{
+                  color: 'var(--ifm-color-primary)',
+                  fontWeight: 500,
+                  textDecoration: 'none',
+                  borderBottom: '1px solid var(--ifm-color-primary-light)',
+                  transition: 'border-color 0.2s ease'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.borderBottomColor = 'var(--ifm-color-primary)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.borderBottomColor = 'var(--ifm-color-primary-light)';
+                }}
               >
                 {res.label}
               </a>
@@ -189,18 +243,32 @@ function ProjectCard({ project }: { project: Project }) {
           ))}
         </ul>
       )}
-      <div style={{display: 'flex', gap: '0.9rem', flexWrap: 'wrap'}}>
+      <div style={{display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: 'auto'}}>
         {project.link && (
           <a 
             href={project.link}
             target={project.external ? '_blank' : undefined}
             rel={project.external ? 'noopener noreferrer' : undefined}
             style={{
-              display: 'inline-block',
-              color: 'var(--ifm-color-primary)',
-              fontWeight: 'bold',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.5rem',
+              padding: '0.75rem 1.5rem',
+              backgroundColor: 'var(--ifm-color-primary)',
+              color: 'white',
               textDecoration: 'none',
-              borderBottom: '2px solid var(--ifm-color-primary)',
+              borderRadius: '8px',
+              fontWeight: 600,
+              fontSize: '0.95rem',
+              transition: 'all 0.2s ease'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-2px)';
+              e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)';
+              e.currentTarget.style.boxShadow = 'none';
             }}
           >
             View project →
@@ -212,11 +280,26 @@ function ProjectCard({ project }: { project: Project }) {
             target="_blank"
             rel="noopener noreferrer"
             style={{
-              display: 'inline-block',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.5rem',
+              padding: '0.75rem 1.5rem',
+              backgroundColor: 'var(--ifm-color-emphasis-0)',
               color: 'var(--ifm-color-primary)',
-              fontWeight: 'bold',
               textDecoration: 'none',
-              borderBottom: '2px solid var(--ifm-color-primary)',
+              borderRadius: '8px',
+              fontWeight: 600,
+              fontSize: '0.95rem',
+              border: '2px solid var(--ifm-color-primary-light)',
+              transition: 'all 0.2s ease'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-2px)';
+              e.currentTarget.style.borderColor = 'var(--ifm-color-primary)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)';
+              e.currentTarget.style.borderColor = 'var(--ifm-color-primary-light)';
             }}
           >
             View repository →
@@ -235,328 +318,507 @@ const categoryCounts = projects.reduce<Record<string, number>>((acc, project) =>
 
 export default function Portfolio(): ReactNode {
   const categories = Array.from(new Set(projects.map((p) => p.category)));
-  const tocEntries = [
-    ...categories.map((category) => ({
-      label: `${toSentenceCase(category)} (${categoryCounts[category] ?? 0})`,
-      href: `#${slugify(category)}`,
-    })),
-    {label: 'Publications (2)', href: '#publications'},
-  ];
 
   return (
     <Layout title="Portfolio" description="Rhocela Pasigna's Portfolio">
-      <main style={{padding: '2rem 0'}}>
-        <div className="container">
-          <Heading as="h1">My portfolio</Heading>
-          <p style={{fontSize: '1.1rem', marginTop: '1rem', marginBottom: '1.25rem', maxWidth: '880px'}}>
-            A concise showcase of my work across API documentation, marketing content, and video production—
-            focusing on clarity, user impact, and end-to-end ownership from strategy to delivery.
+      <main style={{
+        maxWidth: '1400px',
+        margin: '0 auto',
+        padding: '3rem 2rem',
+      }}>
+        <div style={{
+          textAlign: 'center',
+          marginBottom: '3rem'
+        }}>
+          <Heading as="h1" style={{fontSize: '2.5rem', marginBottom: '1rem'}}>
+            Portfolio
+          </Heading>
+          <p style={{fontSize: '1.1rem', color: 'var(--ifm-color-emphasis-700)', maxWidth: '700px', margin: '0 auto 2rem auto'}}>
+            A selection of my professional work in documentation, content strategy, and multimedia production.
           </p>
-          <div style={{display: 'flex', gap: '0.75rem', flexWrap: 'wrap', marginBottom: '2.25rem'}}>
-            <a 
-              href="mailto:rhocela.pasigna@gmail.com"
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '0.35rem',
-                padding: '0.75rem 1.25rem',
-                backgroundColor: 'var(--ifm-color-primary)',
-                color: 'white',
-                textDecoration: 'none',
-                borderRadius: '6px',
-                fontWeight: 700,
-              }}
-            >
-              ✉️ Email me
-            </a>
-            <a 
-              href="https://drive.google.com/file/d/1GRXUg1uiGIPiXQtlNAslWxp3eoYxbnx_/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '0.35rem',
-                padding: '0.75rem 1.25rem',
-                backgroundColor: 'var(--ifm-color-emphasis-100)',
-                color: 'var(--ifm-font-color-base)',
-                textDecoration: 'none',
-                borderRadius: '6px',
-                fontWeight: 700,
-                border: '1px solid var(--ifm-color-emphasis-300)',
-              }}
-            >
-              📄 Download my CV
-            </a>
-          </div>
-
+          
+          {/* Info Box - Additional documentation available */}
           <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'minmax(240px, 280px) 1fr',
-            gap: '1.75rem',
+            background: 'var(--ifm-color-info-lightest)',
+            borderRadius: '12px',
+            padding: '1.25rem',
+            marginBottom: '0',
+            display: 'flex',
             alignItems: 'start',
+            gap: '1rem',
+            border: '1px solid var(--ifm-color-info-light)',
+            maxWidth: '700px',
+            margin: '0 auto',
+            textAlign: 'left'
           }}>
-            <aside style={{
-              position: 'sticky',
-              top: '90px',
-              padding: '1rem 1.25rem',
-              border: '1px solid var(--ifm-color-emphasis-200)',
-              borderRadius: '10px',
-              background: 'var(--ifm-color-emphasis-50)',
-            }}>
-              <Heading as="h3" style={{marginTop: 0, marginBottom: '0.75rem', fontSize: '1.1rem'}}>
-                On this page
-              </Heading>
-              <ul style={{
-                listStyle: 'none',
-                padding: 0,
-                margin: 0,
-                display: 'grid',
-                gap: '0.4rem',
-              }}>
-                {tocEntries.map((entry) => (
-                  <li key={entry.href}>
+            <span style={{fontSize: '1.5rem', flexShrink: 0}}>ℹ️</span>
+            <div style={{lineHeight: '1.6'}}>
+              <strong style={{display: 'block', marginBottom: '0.5rem'}}>Additional documentation available upon request</strong>
+              <span>I have additional user and technical documentation that isn't publicly available. During our meeting, I'm happy to share templatised versions (non-confidential) to respect client privacy and agreements.</span>
+            </div>
+          </div>
+        </div>
+
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'min(280px, 100%) 1fr',
+          gap: '2rem',
+          alignItems: 'start',
+        }}>
+          {/* Table of Contents Sidebar */}
+          <div style={{
+            position: 'sticky',
+            top: '90px',
+            background: 'var(--ifm-color-emphasis-0)',
+            borderRadius: '12px',
+            padding: '1.5rem',
+            boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
+            border: '1px solid var(--ifm-color-emphasis-200)',
+          }}>
+            <Heading as="h3" style={{fontSize: '1rem', marginBottom: '1rem', color: 'var(--ifm-color-primary)'}}>
+              Contents
+            </Heading>
+            <nav>
+              <ul style={{listStyle: 'none', padding: 0, margin: 0}}>
+                {Object.entries(categoryCounts).map(([cat, count]) => (
+                  <li key={cat} style={{marginBottom: '0.75rem'}}>
                     <a 
-                      href={entry.href}
+                      href={`#${slugify(cat)}`}
                       style={{
-                        color: 'var(--ifm-color-primary)',
-                        fontWeight: 600,
                         textDecoration: 'none',
-                        display: 'inline-flex',
+                        color: 'var(--ifm-color-emphasis-800)',
+                        display: 'flex',
+                        justifyContent: 'space-between',
                         alignItems: 'center',
-                        gap: '0.3rem',
+                        padding: '0.5rem',
+                        borderRadius: '6px',
+                        transition: 'all 0.2s ease'
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.backgroundColor = 'var(--ifm-color-primary-lightest)';
+                        e.currentTarget.style.color = 'var(--ifm-color-primary)';
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.backgroundColor = 'transparent';
+                        e.currentTarget.style.color = 'var(--ifm-color-emphasis-800)';
                       }}
                     >
-                      • {entry.label}
+                      <span style={{fontSize: '0.95rem'}}>{toSentenceCase(cat)}</span>
+                      <span style={{
+                        backgroundColor: 'var(--ifm-color-primary-lightest)',
+                        color: 'var(--ifm-color-primary)',
+                        padding: '0.15rem 0.5rem',
+                        borderRadius: '12px',
+                        fontSize: '0.85rem',
+                        fontWeight: 600
+                      }}>
+                        {count}
+                      </span>
                     </a>
                   </li>
                 ))}
+                <li>
+                  <a 
+                    href="#publications"
+                    style={{
+                      textDecoration: 'none',
+                      color: 'var(--ifm-color-emphasis-800)',
+                      display: 'flex',
+                      justifyContent: 'space-between',
+                      alignItems: 'center',
+                      padding: '0.5rem',
+                      borderRadius: '6px',
+                      transition: 'all 0.2s ease'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.backgroundColor = 'var(--ifm-color-primary-lightest)';
+                      e.currentTarget.style.color = 'var(--ifm-color-primary)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.backgroundColor = 'transparent';
+                      e.currentTarget.style.color = 'var(--ifm-color-emphasis-800)';
+                    }}
+                  >
+                    <span style={{fontSize: '0.95rem'}}>Publications</span>
+                  </a>
+                </li>
               </ul>
-            </aside>
+            </nav>
+          </div>
 
-            <div>
-              {categories.map((category, idx) => (
-                <section
+          {/* Main Content */}
+          <div>
+            {/* Projects by Category */}
+            {Object.entries(categoryCounts).map(([category]) => {
+              const categoryProjects = projects.filter(p => p.category === category);
+              return (
+                <section 
                   key={category}
                   id={slugify(category)}
                   style={{
-                    marginBottom: '2.5rem',
-                    padding: '1.5rem',
-                    borderRadius: '12px',
-                    backgroundColor: idx % 2 === 0 ? 'var(--ifm-color-emphasis-50)' : 'var(--ifm-color-emphasis-100)',
+                    marginBottom: '3rem',
+                    background: 'var(--ifm-color-emphasis-0)',
+                    borderRadius: '16px',
+                    padding: '2rem',
+                    boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
                     border: '1px solid var(--ifm-color-emphasis-200)',
                   }}
                 >
-                  <Heading as="h2" style={{marginBottom: '0.75rem'}}>
+                  <Heading as="h2" style={{
+                    fontSize: '1.8rem',
+                    marginBottom: '0.5rem',
+                    color: 'var(--ifm-color-primary)'
+                  }}>
                     {toSentenceCase(category)}
                   </Heading>
-                  <p style={{marginTop: 0, marginBottom: '1rem', color: 'var(--ifm-color-emphasis-700)'}}>
-                    {categoryCounts[category]} project{categoryCounts[category] === 1 ? '' : 's'} focused on {category.toLowerCase()}.
+                  <p style={{
+                    marginBottom: '2rem',
+                    color: 'var(--ifm-color-emphasis-700)',
+                    lineHeight: '1.7'
+                  }}>
+                    {category === 'End-User Documentation' && 'User guides and documentation designed to help end-users understand and effectively use products and platforms.'}
+                    {category === 'Developer Documentation' && 'Technical documentation, API references, integration guides, and architecture documentation for developers building and extending solutions.'}
+                    {category === 'Deployment guide' && 'Installation guides, configuration documentation, deployment procedures, and operational documentation for system administrators and DevOps teams.'}
+                    {category === 'Marketing & sales' && 'Whitepapers, brochures, case studies, and sales collateral communicating product value to business stakeholders.'}
+                    {category === 'Video & multimedia' && 'Educational tutorials, promotional videos, animations, and visual content for user engagement and marketing.'}
                   </p>
-                  {category === 'User & technical docs' && (
-                    <>
-                      <p style={{marginTop: 0, marginBottom: '1rem', color: 'var(--ifm-color-emphasis-700)'}}>
-                        Includes end-user guides, developer guides, and deployment guides to cover both user and technical audiences.
-                      </p>
-                      <div style={{
-                        marginTop: '0.5rem',
-                        marginBottom: '1.25rem',
-                        padding: '1rem 1.25rem',
-                        border: '2px solid var(--ifm-color-info)',
-                        borderRadius: '8px',
-                        backgroundColor: 'var(--ifm-color-info-contrast-background)',
-                        display: 'flex',
-                        gap: '0.75rem',
-                        alignItems: 'start'
-                      }}>
-                        <span style={{fontSize: '1.25rem', flexShrink: 0}}>ℹ️</span>
-                        <div>
-                          <strong style={{display: 'block', marginBottom: '0.35rem', color: 'var(--ifm-color-info-dark)'}}>
-                            Additional documentation available upon request
-                          </strong>
-                          <span style={{color: 'var(--ifm-color-emphasis-800)', lineHeight: 1.6}}>
-                            I have additional user and technical documentation that isn't publicly available. During our meeting, I'm happy to share templatised versions (non-confidential) to respect client privacy and agreements.
-                          </span>
-                        </div>
+                  
+                  {/* Info Box for Video & Multimedia */}
+                  {category === 'Video & multimedia' && (
+                    <div style={{
+                      background: 'var(--ifm-color-info-lightest)',
+                      borderRadius: '12px',
+                      padding: '1.25rem',
+                      marginBottom: '2rem',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '1rem',
+                      border: '1px solid var(--ifm-color-info-light)',
+                    }}>
+                      <span style={{fontSize: '1.5rem'}}>🎬</span>
+                      <div style={{lineHeight: '1.6'}}>
+                        <strong>Hybrid Role:</strong> I wear two hats — not only do I document the workflows and processes, I also produce the videos and multimedia content myself using various tools and platforms.
                       </div>
-                    </>
+                    </div>
                   )}
                   <div style={{
                     display: 'grid',
                     gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-                    gap: '1.25rem',
+                    gap: '1.5rem'
                   }}>
-                    {projects
-                      .filter((p) => p.category === category)
-                      .map((project, projectIdx) => (
-                        <ProjectCard key={`${category}-${projectIdx}`} project={project} />
-                      ))}
+                    {categoryProjects.map((project) => (
+                      <ProjectCard key={project.title} project={project} />
+                    ))}
                   </div>
                 </section>
-              ))}
+              );
+            })}
 
-              <section id="publications" style={{
-                marginBottom: '2.5rem',
-                padding: '1.5rem',
-                borderRadius: '12px',
-                backgroundColor: 'var(--ifm-color-emphasis-50)',
+            {/* Publications Section */}
+            <section 
+              id="publications"
+              style={{
+                marginBottom: '3rem',
+                background: 'var(--ifm-color-emphasis-0)',
+                borderRadius: '16px',
+                padding: '2rem',
+                boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
                 border: '1px solid var(--ifm-color-emphasis-200)',
+              }}
+            >
+              <Heading as="h2" style={{
+                fontSize: '1.8rem',
+                marginBottom: '0.5rem',
+                color: 'var(--ifm-color-primary)'
               }}>
-                <Heading as="h2" style={{marginBottom: '1rem', paddingBottom: '0.35rem', borderBottom: '2px solid var(--ifm-color-primary)'}}>
-                  Publications
-                </Heading>
+                Publications
+              </Heading>
+              <p style={{
+                marginBottom: '2rem',
+                color: 'var(--ifm-color-emphasis-700)',
+                lineHeight: '1.7'
+              }}>
+                Published books and written works.
+              </p>
+
+              <div style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+                gap: '1.5rem'
+              }}>
+                {/* The Self-Discovery Quizbook */}
                 <div style={{
-                  display: 'grid',
-                  gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-                  gap: '1.25rem',
-                }}>
-                  <div style={{
-                    border: '1px solid var(--ifm-color-emphasis-200)',
-                    borderRadius: '10px',
-                    backgroundColor: 'white',
-                    overflow: 'hidden',
-                    boxShadow: '0 6px 18px rgba(0,0,0,0.08)',
-                  }}>
-                    <div style={{height: '120px', background: 'linear-gradient(135deg, #e0ecff, #f5f9ff)'}} />
-                    <div style={{padding: '1.25rem'}}>
-                      <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'start', marginBottom: '0.35rem'}}>
-                        <Heading as="h4" style={{margin: 0}}>The Self-Discovery Quizbook</Heading>
-                        <span style={{
-                          backgroundColor: 'var(--ifm-color-primary)',
-                          color: 'white',
-                          padding: '0.25rem 0.65rem',
-                          borderRadius: '999px',
-                          fontSize: '0.8rem',
-                        }}>
-                          Book details
-                        </span>
-                      </div>
-                      <p style={{color: 'var(--ifm-color-emphasis-700)', marginBottom: '0.5rem', fontSize: '0.9rem'}}>
-                        <strong>Author and creator</strong>
-                      </p>
-                      <p style={{marginBottom: '0.9rem', lineHeight: '1.6'}}>
-                        70 personality quizzes to explore self, relationships, and career—framed for reflection and engaging conversations.
-                      </p>
-                      <a 
-                        href="https://www.amazon.com/Self-Discovery-Quizbook-Personality-Subconscious-Rediscover-ebook/dp/B0DNY6879W"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        style={{
-                          display: 'inline-block',
-                          color: 'var(--ifm-color-primary)',
-                          fontWeight: 'bold',
-                          textDecoration: 'none',
-                          borderBottom: '2px solid var(--ifm-color-primary)',
-                        }}
-                      >
-                        View on Amazon →
-                      </a>
-                    </div>
-                  </div>
-
-                  <div style={{
-                    border: '1px solid var(--ifm-color-emphasis-200)',
-                    borderRadius: '10px',
-                    backgroundColor: 'white',
-                    overflow: 'hidden',
-                    boxShadow: '0 6px 18px rgba(0,0,0,0.08)',
-                  }}>
-                    <div style={{height: '120px', background: 'linear-gradient(135deg, #f9ecff, #fff7ff)'}} />
-                    <div style={{padding: '1.25rem'}}>
-                      <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'start', marginBottom: '0.35rem'}}>
-                        <Heading as="h4" style={{margin: 0}}>Prayers of a Worshipper</Heading>
-                        <span style={{
-                          backgroundColor: 'var(--ifm-color-primary)',
-                          color: 'white',
-                          padding: '0.25rem 0.65rem',
-                          borderRadius: '999px',
-                          fontSize: '0.8rem',
-                        }}>
-                          Book details
-                        </span>
-                      </div>
-                      <p style={{color: 'var(--ifm-color-emphasis-700)', marginBottom: '0.5rem', fontSize: '0.9rem'}}>
-                        <strong>Author and creator</strong>
-                      </p>
-                      <p style={{marginBottom: '0.9rem', lineHeight: '1.6'}}>
-                        70 prayers paired with verses—written for daily surrender, reflection, and peace through worship.
-                      </p>
-                      <a 
-                        href="https://www.amazon.com/Prayers-Worshipper-Christian-Devotional-meditation/dp/B0D31WNBBM"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        style={{
-                          display: 'inline-block',
-                          color: 'var(--ifm-color-primary)',
-                          fontWeight: 'bold',
-                          textDecoration: 'none',
-                          borderBottom: '2px solid var(--ifm-color-primary)',
-                        }}
-                      >
-                        View on Amazon →
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </section>
-
-              <section id="contact" style={{
-                marginTop: '1rem',
-                padding: '1.5rem',
-                backgroundColor: 'var(--ifm-color-emphasis-100)',
-                borderRadius: '12px',
-                border: '1px solid var(--ifm-color-emphasis-200)',
-                display: 'flex',
-                flexWrap: 'wrap',
-                alignItems: 'center',
-                gap: '0.75rem',
-                justifyContent: 'space-between',
-              }}>
-                <div>
-                  <Heading as="h2" style={{margin: 0}}>Interested in working together?</Heading>
-                  <p style={{margin: '0.4rem 0 0 0', color: 'var(--ifm-color-emphasis-700)'}}>
-                    Let's talk about your project, documentation needs, or content roadmap.
-                  </p>
-                </div>
-                <div style={{display: 'flex', gap: '0.6rem', flexWrap: 'wrap'}}>
-                  <a 
-                    href="mailto:rhocela.pasigna@gmail.com"
-                    style={{
-                      display: 'inline-flex',
-                      alignItems: 'center',
-                      gap: '0.35rem',
-                      padding: '0.7rem 1.2rem',
+                  background: 'var(--ifm-color-emphasis-0)',
+                  borderRadius: '16px',
+                  padding: '2rem',
+                  boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
+                  border: '1px solid var(--ifm-color-emphasis-200)',
+                  transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  height: '100%'
+                }}
+                  onMouseEnter={(e) => {
+                    const elem = e.currentTarget;
+                    elem.style.transform = 'translateY(-4px)';
+                    elem.style.boxShadow = '0 8px 20px rgba(0,0,0,0.12)';
+                  }}
+                  onMouseLeave={(e) => {
+                    const elem = e.currentTarget;
+                    elem.style.transform = 'translateY(0)';
+                    elem.style.boxShadow = '0 2px 8px rgba(0,0,0,0.08)';
+                  }}
+                >
+                  <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'start', marginBottom: '1rem', gap: '1rem'}}>
+                    <Heading as="h3" style={{margin: 0, fontSize: '1.2rem', flex: 1}}>
+                      The Self-Discovery Quizbook
+                    </Heading>
+                    <span style={{
                       backgroundColor: 'var(--ifm-color-primary)',
                       color: 'white',
-                      textDecoration: 'none',
-                      borderRadius: '6px',
-                      fontWeight: 700,
-                    }}
-                  >
-                    ✉️ Email me
-                  </a>
+                      padding: '0.5rem 1rem',
+                      borderRadius: '20px',
+                      fontSize: '0.85rem',
+                      whiteSpace: 'nowrap',
+                      fontWeight: 500
+                    }}>
+                      Book
+                    </span>
+                  </div>
+                  <p style={{
+                    color: 'var(--ifm-color-primary-dark)',
+                    marginBottom: '1rem',
+                    fontSize: '0.95rem',
+                    fontWeight: 600
+                  }}>
+                    Author and creator
+                  </p>
+                  <p style={{marginBottom: '1.5rem', lineHeight: '1.7', flex: 1}}>
+                    70 personality quizzes to explore self, relationships, and career—framed for reflection and engaging conversations.
+                  </p>
                   <a 
-                    href="https://www.linkedin.com/in/rhocela-pasigna-a39287b6/"
+                    href="https://www.amazon.com/Self-Discovery-Quizbook-Personality-Subconscious-Rediscover-ebook/dp/B0DNY6879W"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{
                       display: 'inline-flex',
                       alignItems: 'center',
-                      gap: '0.35rem',
-                      padding: '0.7rem 1.2rem',
-                      backgroundColor: 'white',
-                      color: 'var(--ifm-color-primary)',
+                      gap: '0.5rem',
+                      padding: '0.75rem 1.5rem',
+                      backgroundColor: 'var(--ifm-color-primary)',
+                      color: 'white',
                       textDecoration: 'none',
-                      borderRadius: '6px',
-                      fontWeight: 700,
-                      border: '1px solid var(--ifm-color-primary)',
+                      borderRadius: '8px',
+                      fontWeight: 600,
+                      fontSize: '0.95rem',
+                      transition: 'all 0.2s ease',
+                      marginTop: 'auto',
+                      alignSelf: 'flex-start'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.transform = 'translateY(-2px)';
+                      e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.transform = 'translateY(0)';
+                      e.currentTarget.style.boxShadow = 'none';
                     }}
                   >
-                    💼 LinkedIn
+                    View on Amazon →
                   </a>
                 </div>
-              </section>
-            </div>
+
+                {/* Prayers of a Worshipper */}
+                <div style={{
+                  background: 'var(--ifm-color-emphasis-0)',
+                  borderRadius: '16px',
+                  padding: '2rem',
+                  boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
+                  border: '1px solid var(--ifm-color-emphasis-200)',
+                  transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  height: '100%'
+                }}
+                  onMouseEnter={(e) => {
+                    const elem = e.currentTarget;
+                    elem.style.transform = 'translateY(-4px)';
+                    elem.style.boxShadow = '0 8px 20px rgba(0,0,0,0.12)';
+                  }}
+                  onMouseLeave={(e) => {
+                    const elem = e.currentTarget;
+                    elem.style.transform = 'translateY(0)';
+                    elem.style.boxShadow = '0 2px 8px rgba(0,0,0,0.08)';
+                  }}
+                >
+                  <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'start', marginBottom: '1rem', gap: '1rem'}}>
+                    <Heading as="h3" style={{margin: 0, fontSize: '1.2rem', flex: 1}}>
+                      Prayers of a Worshipper
+                    </Heading>
+                    <span style={{
+                      backgroundColor: 'var(--ifm-color-primary)',
+                      color: 'white',
+                      padding: '0.5rem 1rem',
+                      borderRadius: '20px',
+                      fontSize: '0.85rem',
+                      whiteSpace: 'nowrap',
+                      fontWeight: 500
+                    }}>
+                      Book
+                    </span>
+                  </div>
+                  <p style={{
+                    color: 'var(--ifm-color-primary-dark)',
+                    marginBottom: '1rem',
+                    fontSize: '0.95rem',
+                    fontWeight: 600
+                  }}>
+                    Author and creator
+                  </p>
+                  <p style={{marginBottom: '1.5rem', lineHeight: '1.7', flex: 1}}>
+                    70 prayers paired with verses—written for daily surrender, reflection, and peace through worship.
+                  </p>
+                  <a 
+                    href="https://www.amazon.com/Prayers-Worshipper-Christian-Devotional-meditation/dp/B0D31WNBBM"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '0.5rem',
+                      padding: '0.75rem 1.5rem',
+                      backgroundColor: 'var(--ifm-color-primary)',
+                      color: 'white',
+                      textDecoration: 'none',
+                      borderRadius: '8px',
+                      fontWeight: 600,
+                      fontSize: '0.95rem',
+                      transition: 'all 0.2s ease',
+                      marginTop: 'auto',
+                      alignSelf: 'flex-start'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.transform = 'translateY(-2px)';
+                      e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.transform = 'translateY(0)';
+                      e.currentTarget.style.boxShadow = 'none';
+                    }}
+                  >
+                    View on Amazon →
+                  </a>
+                </div>
+              </div>
+            </section>
+
+            {/* Contact Section */}
+            <section style={{
+              background: 'var(--ifm-color-emphasis-0)',
+              borderRadius: '16px',
+              padding: '2rem',
+              boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
+              border: '1px solid var(--ifm-color-emphasis-200)',
+              textAlign: 'center'
+            }}>
+              <Heading as="h2" style={{
+                fontSize: '1.8rem',
+                marginBottom: '0.5rem',
+                color: 'var(--ifm-color-primary)'
+              }}>
+                Interested in working together?
+              </Heading>
+              <p style={{
+                marginBottom: '2rem',
+                color: 'var(--ifm-color-emphasis-700)',
+                lineHeight: '1.7'
+              }}>
+                Let's talk about your project, documentation needs, or content roadmap.
+              </p>
+              <div style={{display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center'}}>
+                <a 
+                  href="mailto:rhocela.pasigna@gmail.com"
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '0.5rem',
+                    padding: '0.75rem 1.5rem',
+                    backgroundColor: 'var(--ifm-color-primary)',
+                    color: 'white',
+                    textDecoration: 'none',
+                    borderRadius: '8px',
+                    fontWeight: 600,
+                    fontSize: '0.95rem',
+                    transition: 'all 0.2s ease'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = 'translateY(-2px)';
+                    e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = 'translateY(0)';
+                    e.currentTarget.style.boxShadow = 'none';
+                  }}
+                >
+                  ✉️ Email me
+                </a>
+                <a 
+                  href="https://www.linkedin.com/in/rhocela-pasigna-a39287b6/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '0.5rem',
+                    padding: '0.75rem 1.5rem',
+                    backgroundColor: 'var(--ifm-color-emphasis-0)',
+                    color: 'var(--ifm-color-primary)',
+                    textDecoration: 'none',
+                    borderRadius: '8px',
+                    fontWeight: 600,
+                    fontSize: '0.95rem',
+                    border: '2px solid var(--ifm-color-primary-light)',
+                    transition: 'all 0.2s ease'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = 'translateY(-2px)';
+                    e.currentTarget.style.borderColor = 'var(--ifm-color-primary)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = 'translateY(0)';
+                    e.currentTarget.style.borderColor = 'var(--ifm-color-primary-light)';
+                  }}
+                >
+                  💼 LinkedIn
+                </a>
+              </div>
+
+              {/* Back to top */}
+              <div style={{marginTop: '2rem'}}>
+                <a
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }}
+                  style={{
+                    color: 'var(--ifm-color-primary)',
+                    textDecoration: 'none',
+                    fontSize: '0.95rem',
+                    fontWeight: 500,
+                    transition: 'opacity 0.2s ease'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.opacity = '0.7';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.opacity = '1';
+                  }}
+                >
+                  ↑ Back to top
+                </a>
+              </div>
+            </section>
           </div>
         </div>
       </main>
