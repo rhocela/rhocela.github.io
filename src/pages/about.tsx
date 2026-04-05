@@ -57,13 +57,13 @@ export default function About(): ReactNode {
               lineHeight: '1.8'
             }}>
               <p style={{marginBottom: '1rem'}}>
-                Senior Technical Writer with a proven track record of building and leading documentation functions from the ground up.
+                Senior Technical Writer with a proven track record of <strong>building and leading documentation functions</strong> from the ground up.
               </p>
               <p style={{marginBottom: '1rem'}}>
-                I establish documentation practices and standards while managing the entire documentation lifecycle—from planning to publication. I treat documentation as a product and advocate for developing it with the same high standards as the core product, using modern processes like docs-as-code.
+                I establish documentation practices and standards while managing the <strong>entire documentation lifecycle</strong>—from planning to publication. I treat <strong>documentation as a product</strong> and advocate for developing it with the same high standards as the core product, using modern processes like <strong>docs-as-code</strong>.
               </p>
               <p style={{marginBottom: '1rem'}}>
-                I transform complex ideas—blending technical expertise with clear, accessible content—to reach diverse audiences. Whether writing for engineers, sales professionals, or end users, I believe the true value of documentation lies in its usability and user experience.
+                I transform complex ideas—blending technical expertise with clear, accessible content—to reach diverse audiences. Whether writing for engineers, sales professionals, or end users, I believe the true value of documentation lies in its <strong>usability and user experience</strong>.
               </p>
               <p style={{marginBottom: '1rem'}}>
                 Passionate about fostering a culture of excellence through knowledge sharing, I am looking to connect with teams building great products and recognizing that great documentation is an essential part of that success.
@@ -139,102 +139,112 @@ export default function About(): ReactNode {
           <section style={{marginBottom: '3rem'}}>
             <Heading as="h2" style={{marginBottom: '1.5rem'}}>Work experience</Heading>
             
-            {/* Job 1 */}
-            <WorkExperienceCard 
-              emoji="💼"
-              title="Senior Technical Writer II"
-              company="Luxembourg National Data Service (LNDS) (Luxembourg)"
-              period="Jul 2025 - Present"
-              responsibilities={[
-                'Build and scale the documentation function from the ground up, owning the full lifecycle from tool evaluation and information architecture to content strategy, publication, and long-term maintenance',
-                'Define documentation standards, workflows, and best practices, treating documentation as a product and aligning it with engineering and business goals',
-                'Develop and execute a documentation roadmap and content strategy covering API guides, system operations manuals, integration guides, and user-facing documentation',
-                'Partner with Development, Data, and Communications teams to align documentation with technical requirements, release cycles, and audience needs',
-                'Establish and maintain a centralized documentation library, ensuring content accuracy, discoverability, and ongoing relevance',
-                'Translate complex technical concepts into clear, usable, and audience-appropriate content for engineers, internal teams, and external users',
-                'Implement review, feedback, and continuous improvement processes, incorporating stakeholder and user input to raise documentation quality and usability',
-                'Coach and enable teams on technical writing principles, documentation workflows, and contribution standards, fostering a culture of shared ownership and quality',
-                'Monitor industry trends and modern documentation practices (e.g., docs-as-code) to continuously evolve tooling, processes, and standards',
-                'Serve as Scrum Master for a cross-functional team, facilitating agile ceremonies, removing impediments, and promoting continuous improvement and collaboration',
-                'Support the Communications team by shaping technical content for external audiences, ensuring clarity, accuracy, and consistency with product messaging'
-              ]}
-            />
+            <div style={{position: 'relative'}}>
+              {/* Job 1 - Current Role */}
+              <TimelineItem 
+                isCurrent={true}
+                title="Senior Technical Writer II"
+                company="Luxembourg National Data Service (LNDS)"
+                location="Luxembourg"
+                period="Jul 2025 - Present"
+                responsibilities={[
+                  '<strong>Build and scale the documentation function</strong> from the ground up, owning the full lifecycle from tool evaluation and information architecture to content strategy, publication, and long-term maintenance',
+                  '<strong>Define documentation standards, workflows, and best practices</strong>, treating documentation as a product and aligning it with engineering and business goals',
+                  'Develop and execute a documentation roadmap and content strategy covering <strong>API guides, system operations manuals, integration guides</strong>, and user-facing documentation',
+                  'Partner with Development, Data, and Communications teams to align documentation with technical requirements, release cycles, and audience needs',
+                  'Establish and maintain a <strong>centralized documentation library</strong>, ensuring content accuracy, discoverability, and ongoing relevance',
+                  'Translate complex technical concepts into clear, usable, and audience-appropriate content for engineers, internal teams, and external users',
+                  'Implement review, feedback, and continuous improvement processes, incorporating stakeholder and user input to raise documentation quality and usability',
+                  '<strong>Coach and enable teams</strong> on technical writing principles, documentation workflows, and contribution standards, fostering a culture of shared ownership and quality',
+                  'Monitor industry trends and modern documentation practices (e.g., <strong>docs-as-code</strong>) to continuously evolve tooling, processes, and standards',
+                  '<strong>Serve as Scrum Master</strong> for a cross-functional team, facilitating agile ceremonies, removing impediments, and promoting continuous improvement and collaboration',
+                  'Support the Communications team by shaping technical content for external audiences, ensuring clarity, accuracy, and consistency with product messaging'
+                ]}
+              />
 
-            {/* Job 2 */}
-            <WorkExperienceCard 
-              title="Technical Writer"
-              company="MobiLab Solutions GmbH (Germany)"
-              period="Sep 2023 - Jul 2025"
-              responsibilities={[
-                'Established and led documentation efforts for data integration products, acting as the sole technical writer during the initial phase and building foundational practices and standards',
-                'Wrote end-to-end documentation for multiple audiences, including implementation and design documents, user guides, and tutorials',
-                'Defined documentation structure, UX writing standards, and language consistency across products and related materials',
-                'Collaborated with clients, Product Owners, Project Managers, Designers, and Engineers to understand technical concepts, product requirements, and user journeys',
-                'Created, reviewed, and edited product-oriented blog content, ensuring alignment with product messaging and documentation standards',
-                'Laid the groundwork for scaling documentation, enabling smoother onboarding and knowledge transfer as additional writers joined'
-              ]}
-            />
+              {/* Job 2 */}
+              <TimelineItem 
+                title="Technical Writer"
+                company="MobiLab Solutions GmbH"
+                location="Germany"
+                period="Sep 2023 - Jul 2025"
+                responsibilities={[
+                  '<strong>Established and led documentation efforts</strong> for data integration products, acting as the <strong>sole technical writer</strong> during the initial phase and building foundational practices and standards',
+                  'Wrote <strong>end-to-end documentation</strong> for multiple audiences, including implementation and design documents, user guides, and tutorials',
+                  '<strong>Defined documentation structure, UX writing standards</strong>, and language consistency across products and related materials',
+                  'Collaborated with clients, Product Owners, Project Managers, Designers, and Engineers to understand technical concepts, product requirements, and user journeys',
+                  'Created, reviewed, and edited product-oriented blog content, ensuring alignment with product messaging and documentation standards',
+                  'Laid the groundwork for <strong>scaling documentation</strong>, enabling smoother onboarding and knowledge transfer as additional writers joined'
+                ]}
+              />
 
-            {/* Job 3 */}
-            <WorkExperienceCard 
-              title="Senior Technical Writer"
-              company="Zylem Pte Ltd (Singapore)"
-              period="Dec 2015 - July 2023"
-              responsibilities={[
-                'Delivered diverse content needs for both internal and external communications and analyzed data to find the most suitable format for each',
-                'Developed and maintained user guides, knowledge base, API documentation, release notes, training materials, and blog posts',
-                'Assisted the Marketing and Communications teams in efforts from conceptualization to publication of the company website, social media, webinars, and blogs. Created sales and marketing content for print and digital media, including videos, newsletters, and campaigns',
-                'Co-managed SaaS implementation projects from requirement gathering to the go-live phase'
-              ]}
-            />
+              {/* Job 3 */}
+              <TimelineItem 
+                title="Senior Technical Writer"
+                company="Zylem Pte Ltd"
+                location="Singapore"
+                period="Dec 2015 - July 2023"
+                responsibilities={[
+                  'Delivered diverse content needs for both internal and external communications and analyzed data to find the most suitable format for each',
+                  'Developed and maintained user guides, knowledge base, <strong>API documentation</strong>, release notes, training materials, and blog posts',
+                  'Assisted the Marketing and Communications teams in efforts from conceptualization to publication of the company website, social media, webinars, and blogs. Created <strong>sales and marketing content</strong> for print and digital media, including videos, newsletters, and campaigns',
+                  '<strong>Co-managed SaaS implementation projects</strong> from requirement gathering to the go-live phase'
+                ]}
+              />
 
-            {/* Job 4 */}
-            <WorkExperienceCard 
-              title="Senior Content Developer"
-              company="in2 Marketing (Singapore)"
-              period="Jun 2012 - Nov 2015"
-              responsibilities={[
-                'Developed print and online B2B and B2C marketing content for Intel, Dell, Toshiba, and Lenovo across print and digital platforms',
-                'Developed content strategy for clients\' B2B events across the Asia Pacific region',
-                'Collaborated with the Design team to conceptualize content, designs, videos, and marketing campaign ideas',
-                'Built and managed the company\'s Facebook page, increasing brand awareness'
-              ]}
-            />
+              {/* Job 4 */}
+              <TimelineItem 
+                title="Senior Content Developer"
+                company="in2 Marketing & Consulting Pte Ltd"
+                location="Singapore"
+                period="Jun 2012 - Nov 2015"
+                responsibilities={[
+                  'Developed print and online <strong>B2B and B2C marketing content</strong> for Intel, Dell, Toshiba, and Lenovo across print and digital platforms',
+                  'Developed <strong>content strategy for clients\' B2B events</strong> across the Asia Pacific region',
+                  'Collaborated with the Design team to conceptualize content, designs, videos, and marketing campaign ideas',
+                  'Built and managed the company\'s Facebook page, increasing brand awareness'
+                ]}
+              />
 
-            {/* Job 5 */}
-            <WorkExperienceCard 
-              title="Product Specialist"
-              company="Lexmark (Philippines)"
-              period="Jul 2005 - Apr 2012"
-              responsibilities={[
-                'Successfully led a team of eight professionals, resolving technical issues concerning multifunction printers and end-of-line printers',
-                'Contributed to knowledge base articles',
-                'Consistently surpassed KPIs and maintained exceptional customer service'
-              ]}
-            />
+              {/* Job 5 */}
+              <TimelineItem 
+                title="Product Specialist"
+                company="Lexmark"
+                location="Philippines"
+                period="Jul 2005 - Apr 2012"
+                responsibilities={[
+                  '<strong>Successfully led a team of eight professionals</strong>, resolving technical issues concerning multifunction printers and end-of-line printers',
+                  'Contributed to knowledge base articles',
+                  'Consistently surpassed KPIs and maintained exceptional customer service'
+                ]}
+              />
 
-            {/* Job 6 */}
-            <WorkExperienceCard 
-              title="Level 2 Technical Support Representative"
-              company="Stream Global Solutions, Inc. (Philippines)"
-              period="Aug 2006 - Jan 2009"
-              responsibilities={[
-                'Resolved escalated issues concerning Dell PCs and notebooks',
-                'Maintained a "High-Flyer Customer Satisfaction Award" for two consecutive years',
-                'Created documentation and reports involving technical solutions'
-              ]}
-            />
+              {/* Job 6 */}
+              <TimelineItem 
+                title="Level 2 Technical Support Representative"
+                company="Stream Global Solutions, Inc."
+                location="Philippines"
+                period="Aug 2006 - Jan 2009"
+                responsibilities={[
+                  'Resolved escalated issues concerning Dell PCs and notebooks',
+                  'Maintained a "High-Flyer Customer Satisfaction Award" for two consecutive years',
+                  'Created documentation and reports involving technical solutions'
+                ]}
+              />
 
-            {/* Job 7 */}
-            <WorkExperienceCard 
-              title="Content Developer"
-              company="Cebuhopper.com (Philippines)"
-              period="Aug 2005 - Dec 2006"
-              responsibilities={[
-                'Wrote compelling write-ups and product advertisements',
-                'Shaped the overall content of the website'
-              ]}
-            />
+              {/* Job 7 */}
+              <TimelineItem 
+                isLast={true}
+                title="Content Developer"
+                company="Cebuhopper.com"
+                location="Philippines"
+                period="Aug 2005 - Dec 2006"
+                responsibilities={[
+                  'Wrote compelling write-ups and product advertisements',
+                  'Shaped the overall content of the website'
+                ]}
+              />
+            </div>
           </section>
 
           {/* Skills */}
@@ -358,8 +368,43 @@ export default function About(): ReactNode {
                 e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
               }}
             >
-              📄 Download full CV
+              📄 Download CV
             </a>
+            
+            {/* Back to Top Link */}
+            <div style={{marginTop: '2rem'}}>
+              <button
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  color: 'var(--ifm-color-primary)',
+                  cursor: 'pointer',
+                  fontSize: '0.95rem',
+                  fontWeight: 500,
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.5rem',
+                  padding: '0.5rem 1rem',
+                  borderRadius: '6px',
+                  transition: 'all 0.2s ease',
+                  opacity: 0.8
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.opacity = '1';
+                  e.currentTarget.style.transform = 'translateY(-2px)';
+                  e.currentTarget.style.background = 'var(--ifm-color-emphasis-100)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.opacity = '0.8';
+                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.background = 'none';
+                }}
+              >
+                <span style={{fontSize: '1.2rem'}}>↑</span>
+                Back to top
+              </button>
+            </div>
           </div>
         </div>
         
@@ -464,38 +509,128 @@ const ToolTag = ({name}: {name: string}) => {
   );
 };
 
-const WorkExperienceCard = ({emoji, title, company, period, responsibilities}: {
-  emoji?: string;
+const TimelineItem = ({isCurrent = false, isLast = false, title, company, location, period, responsibilities}: {
+  isCurrent?: boolean;
+  isLast?: boolean;
   title: string;
   company: string;
+  location: string;
   period: string;
   responsibilities: string[];
 }) => (
   <div style={{
-    background: 'var(--ifm-color-emphasis-0)',
-    borderRadius: '16px',
-    padding: '2rem',
-    boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
-    border: '1px solid var(--ifm-color-emphasis-200)',
-    marginBottom: '1.5rem'
+    position: 'relative',
+    paddingLeft: '3rem',
+    paddingBottom: isLast ? 0 : '2rem',
+    marginBottom: isLast ? 0 : '1rem'
   }}>
-    <div style={{display: 'flex', alignItems: 'flex-start', gap: '1rem', marginBottom: '1rem'}}>
-      {emoji && <div style={{fontSize: '2rem', flexShrink: 0}}>{emoji}</div>}
-      <div style={{flex: 1}}>
-        <h3 style={{margin: 0, fontSize: '1.2rem'}}>{title}</h3>
-        <p style={{margin: '0.25rem 0', fontWeight: 'bold', color: 'var(--ifm-color-primary-dark)'}}>
+    {/* Timeline Line */}
+    {!isLast && (
+      <div style={{
+        position: 'absolute',
+        left: '16px',
+        top: '32px',
+        bottom: '-1rem',
+        width: '3px',
+        background: 'linear-gradient(to bottom, var(--ifm-color-primary-light), var(--ifm-color-emphasis-200))',
+        opacity: 0.3
+      }} />
+    )}
+    
+    {/* Timeline Dot */}
+    <div style={{
+      position: 'absolute',
+      left: 0,
+      top: '8px',
+      width: '36px',
+      height: '36px',
+      borderRadius: '50%',
+      background: isCurrent 
+        ? 'linear-gradient(135deg, var(--ifm-color-primary), var(--ifm-color-primary-dark))' 
+        : 'var(--ifm-color-emphasis-0)',
+      border: `3px solid ${isCurrent ? 'var(--ifm-color-primary-light)' : 'var(--ifm-color-emphasis-300)'}`,
+      boxShadow: isCurrent 
+        ? '0 0 0 4px var(--ifm-color-primary-lightest), 0 4px 12px rgba(0,0,0,0.15)' 
+        : '0 2px 8px rgba(0,0,0,0.08)',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      zIndex: 2
+    }}>
+      {isCurrent && (
+        <div style={{
+          width: '12px',
+          height: '12px',
+          borderRadius: '50%',
+          background: 'white'
+        }} />
+      )}
+    </div>
+
+    {/* Job Card */}
+    <div style={{
+      background: 'var(--ifm-color-emphasis-0)',
+      borderRadius: '16px',
+      padding: '1.5rem',
+      boxShadow: isCurrent 
+        ? '0 4px 16px rgba(0,0,0,0.12)' 
+        : '0 2px 8px rgba(0,0,0,0.08)',
+      border: isCurrent 
+        ? '2px solid var(--ifm-color-primary-lightest)' 
+        : '1px solid var(--ifm-color-emphasis-200)',
+      transition: 'transform 0.2s ease, box-shadow 0.2s ease'
+    }}
+    onMouseEnter={(e) => {
+      e.currentTarget.style.transform = 'translateY(-2px)';
+      e.currentTarget.style.boxShadow = '0 8px 20px rgba(0,0,0,0.12)';
+    }}
+    onMouseLeave={(e) => {
+      e.currentTarget.style.transform = 'translateY(0)';
+      e.currentTarget.style.boxShadow = isCurrent ? '0 4px 16px rgba(0,0,0,0.12)' : '0 2px 8px rgba(0,0,0,0.08)';
+    }}>
+      <div style={{marginBottom: '1rem'}}>
+        <h3 style={{margin: 0, fontSize: '1.2rem', marginBottom: '0.5rem'}}>
+          {title}
+          {isCurrent && (
+            <span style={{
+              marginLeft: '0.75rem',
+              fontSize: '0.75rem',
+              padding: '0.25rem 0.75rem',
+              borderRadius: '12px',
+              background: 'var(--ifm-color-primary)',
+              color: 'white',
+              fontWeight: 600,
+              textTransform: 'uppercase',
+              letterSpacing: '0.5px'
+            }}>Current</span>
+          )}
+        </h3>
+        <p style={{
+          margin: '0.25rem 0',
+          fontWeight: 'bold',
+          fontSize: '1rem',
+          color: 'var(--ifm-color-primary-dark)'
+        }}>
           {company}
         </p>
-        <p style={{margin: '0.25rem 0 0 0', fontSize: '0.9rem', opacity: 0.8}}>
-          {period}
-        </p>
+        <div style={{
+          display: 'flex',
+          gap: '1rem',
+          alignItems: 'center',
+          fontSize: '0.9rem',
+          opacity: 0.8,
+          marginTop: '0.25rem'
+        }}>
+          <span>📍 {location}</span>
+          <span>📅 {period}</span>
+        </div>
       </div>
+      <ul style={{lineHeight: '1.7', margin: 0, paddingLeft: '1.25rem'}}>
+        {responsibilities.map((responsibility, index) => (
+          <li key={index} style={{fontSize: '0.95rem', marginBottom: '0.5rem'}} dangerouslySetInnerHTML={{__html: responsibility}} />
+        ))}
+      </ul>
     </div>
-    <ul style={{lineHeight: '1.7', marginBottom: 0, marginTop: '1rem', paddingLeft: '1.25rem'}}>
-      {responsibilities.map((responsibility, index) => (
-        <li key={index} style={{fontSize: '0.95rem', marginBottom: '0.5rem'}}>{responsibility}</li>
-      ))}
-    </ul>
   </div>
 );
 
