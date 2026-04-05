@@ -1,5 +1,6 @@
 import type {ReactNode} from 'react';
 import clsx from 'clsx';
+import Link from '@docusaurus/Link';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
@@ -7,6 +8,8 @@ type FeatureItem = {
   title: string;
   image: string;
   description: ReactNode;
+  buttonText: string;
+  buttonLink: string;
 };
 
 const FeatureList: FeatureItem[] = [
@@ -15,45 +18,60 @@ const FeatureList: FeatureItem[] = [
     image: require('@site/static/img/technical-documentation.png').default,
     description: (
       <>
-        Comprehensive documentation including API guides, system operations manuals, 
-        integration guides, and user manuals. Creating and managing documentation libraries 
-        that are up-to-date, accessible, and aligned with project standards.
+        I build documentation systems that engineers actually use. From API references to 
+        operational guides, I create content that reduces support tickets and speeds up 
+        onboarding. Docs-as-code workflows keep everything current and version-controlled.
       </>
     ),
+    buttonText: 'View portfolio',
+    buttonLink: '/portfolio',
   },
   {
     title: 'Cross-functional collaboration',
     image: require('@site/static/img/collaboration.png').default,
     description: (
       <>
-        Working closely with Development, Data Science, and Communications teams to 
-        gather requirements and translate complex technical concepts into clear, 
-        user-friendly content for both internal and external audiences.
+        I bridge technical and non-technical teams, turning discussions into 
+        actionable documentation. By working directly with technical teams across the stack, I catch 
+        knowledge gaps and create content that serves both internal teams and end users.
       </>
     ),
+    buttonText: 'Read testimonials',
+    buttonLink: '/testimonials',
   },
   {
     title: 'Agile leadership',
     image: require('@site/static/img/agile.png').default,
     description: (
       <>
-        Serving as Scrum Master, facilitating agile ceremonies and promoting collaboration. 
-        Coaching teams on technical writing best practices while fostering a culture of 
-        continuous learning and improvement.
+        As Scrum Master, I keep teams moving—identifying blockers, managing dependencies, escalating issues,
+        and surfacing risks before they derail sprints. I facilitate standups and Agile ceremonies 
+        that lead to action, not just discussion.
       </>
     ),
+    buttonText: 'Learn more',
+    buttonLink: '/about',
   },
 ];
 
-function Feature({title, image, description}: FeatureItem) {
+function Feature({title, image, description, buttonText, buttonLink}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <img className={styles.featureImg} src={image} alt={title} />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
+      <div className={styles.featureCard}>
+        <div className="text--center">
+          <img className={styles.featureImg} src={image} alt={title} />
+        </div>
+        <div className="text--center padding-horiz--md">
+          <Heading as="h3">{title}</Heading>
+          <p>{description}</p>
+          <div style={{marginTop: '1.5rem'}}>
+            <Link
+              className="button button--primary button--sm"
+              to={buttonLink}>
+              {buttonText}
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   );

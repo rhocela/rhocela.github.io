@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Rhocela Pasigna',
-  tagline: 'Technical Writer & Content Developer',
+  tagline: 'Technical Writer / Documentation Lead',
   // Use the custom tech writer icon for the site favicon
   favicon: 'img/tech-writer-icon-ico.ico',
 

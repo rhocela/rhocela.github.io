@@ -1,12 +1,52 @@
 .features {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
+  padding: 4rem 0;
   width: 100%;
+  background-color: var(--ifm-background-surface-color);
 }
 
 .featureImg {
   height: 200px;
   width: 200px;
   object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.featureCard {
+  background: var(--ifm-color-emphasis-0);
+  border-radius: 8px;
+  padding: 2rem 1.5rem;
+  height: 100%;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.featureCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.featureCard h3 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+}
+
+.featureCard p {
+  margin: 0;
+  line-height: 1.7;
+  color: var(--ifm-color-emphasis-800);
+  font-size: 0.95rem;
+}
+
+@media screen and (max-width: 996px) {
+  .features {
+    padding: 2rem 0;
+  }
+  
+  .featureCard {
+    margin-bottom: 1.5rem;
+  }
 }
