@@ -133,7 +133,7 @@ export default function Testimonials(): ReactNode {
         <div className="container">
           <Heading as="h1">Testimonials</Heading>
           <p style={{fontSize: '1.1rem', marginTop: '1rem', marginBottom: '2rem'}}>
-            What my clients and colleagues say about working with me.
+            What my colleagues say about working with me.
           </p>
 
           <section>
@@ -177,7 +177,7 @@ export default function Testimonials(): ReactNode {
                 fontWeight: 'bold',
               }}
             >
-              Send me a message
+              Email me
             </a>
           </section>
         </div>

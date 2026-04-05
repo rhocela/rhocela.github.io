@@ -271,7 +271,7 @@ function ProjectCard({ project }: { project: Project }) {
               e.currentTarget.style.boxShadow = 'none';
             }}
           >
-            View project →
+            View project
           </a>
         )}
         {project.repoLink && (
@@ -302,7 +302,7 @@ function ProjectCard({ project }: { project: Project }) {
               e.currentTarget.style.borderColor = 'var(--ifm-color-primary-light)';
             }}
           >
-            View repository →
+            View repository
           </a>
         )}
       </div>
@@ -634,7 +634,7 @@ export default function Portfolio(): ReactNode {
                       e.currentTarget.style.boxShadow = 'none';
                     }}
                   >
-                    View on Amazon →
+                    View on Amazon
                   </a>
                 </div>
 
@@ -716,7 +716,7 @@ export default function Portfolio(): ReactNode {
                       e.currentTarget.style.boxShadow = 'none';
                     }}
                   >
-                    View on Amazon →
+                    View on Amazon
                   </a>
                 </div>
               </div>

@@ -22,10 +22,22 @@ export default function Contact(): ReactNode {
             {/* Email */}
             <div style={{
               padding: '2rem',
-              backgroundColor: 'var(--ifm-color-emphasis-50)',
-              borderRadius: '8px',
+              background: 'var(--ifm-color-emphasis-0)',
+              borderRadius: '16px',
+              boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
+              border: '1px solid var(--ifm-color-emphasis-200)',
               textAlign: 'center',
-            }}>
+              transition: 'transform 0.2s ease, box-shadow 0.2s ease'
+            }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-4px)';
+                e.currentTarget.style.boxShadow = '0 8px 20px rgba(0,0,0,0.12)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 2px 8px rgba(0,0,0,0.08)';
+              }}
+            >
               <div style={{fontSize: '2.5rem', marginBottom: '1rem'}}>✉️</div>
               <Heading as="h3">Email</Heading>
               <p>
@@ -41,7 +53,7 @@ export default function Contact(): ReactNode {
                   rhocela.pasigna@gmail.com
                 </a>
               </p>
-              <p style={{fontSize: '0.9rem', color: 'var(--ifm-color-emphasis-700)'}}>
+              <p style={{fontSize: '0.9rem', color: 'var(--ifm-color-emphasis-700)', marginBottom: 0}}>
                 Get a response within 24 hours
               </p>
             </div>
@@ -49,10 +61,22 @@ export default function Contact(): ReactNode {
             {/* LinkedIn */}
             <div style={{
               padding: '2rem',
-              backgroundColor: 'var(--ifm-color-emphasis-50)',
-              borderRadius: '8px',
+              background: 'var(--ifm-color-emphasis-0)',
+              borderRadius: '16px',
+              boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
+              border: '1px solid var(--ifm-color-emphasis-200)',
               textAlign: 'center',
-            }}>
+              transition: 'transform 0.2s ease, box-shadow 0.2s ease'
+            }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-4px)';
+                e.currentTarget.style.boxShadow = '0 8px 20px rgba(0,0,0,0.12)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 2px 8px rgba(0,0,0,0.08)';
+              }}
+            >
               <div style={{fontSize: '2.5rem', marginBottom: '1rem'}}>💼</div>
               <Heading as="h3">LinkedIn</Heading>
               <p>
@@ -70,7 +94,7 @@ export default function Contact(): ReactNode {
                   Connect with me
                 </a>
               </p>
-              <p style={{fontSize: '0.9rem', color: 'var(--ifm-color-emphasis-700)'}}>
+              <p style={{fontSize: '0.9rem', color: 'var(--ifm-color-emphasis-700)', marginBottom: 0}}>
                 View my professional profile
               </p>
             </div>
@@ -78,10 +102,22 @@ export default function Contact(): ReactNode {
             {/* GitHub */}
             <div style={{
               padding: '2rem',
-              backgroundColor: 'var(--ifm-color-emphasis-50)',
-              borderRadius: '8px',
+              background: 'var(--ifm-color-emphasis-0)',
+              borderRadius: '16px',
+              boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
+              border: '1px solid var(--ifm-color-emphasis-200)',
               textAlign: 'center',
-            }}>
+              transition: 'transform 0.2s ease, box-shadow 0.2s ease'
+            }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-4px)';
+                e.currentTarget.style.boxShadow = '0 8px 20px rgba(0,0,0,0.12)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 2px 8px rgba(0,0,0,0.08)';
+              }}
+            >
               <div style={{fontSize: '2.5rem', marginBottom: '1rem'}}>🔗</div>
               <Heading as="h3">GitHub</Heading>
               <p>
@@ -99,7 +135,7 @@ export default function Contact(): ReactNode {
                   View GitHub profile
                 </a>
               </p>
-              <p style={{fontSize: '0.9rem', color: 'var(--ifm-color-emphasis-700)'}}>
+              <p style={{fontSize: '0.9rem', color: 'var(--ifm-color-emphasis-700)', marginBottom: 0}}>
                 Check out my projects
               </p>
             </div>
@@ -107,10 +143,22 @@ export default function Contact(): ReactNode {
             {/* GitLab */}
             <div style={{
               padding: '2rem',
-              backgroundColor: 'var(--ifm-color-emphasis-50)',
-              borderRadius: '8px',
+              background: 'var(--ifm-color-emphasis-0)',
+              borderRadius: '16px',
+              boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
+              border: '1px solid var(--ifm-color-emphasis-200)',
               textAlign: 'center',
-            }}>
+              transition: 'transform 0.2s ease, box-shadow 0.2s ease'
+            }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-4px)';
+                e.currentTarget.style.boxShadow = '0 8px 20px rgba(0,0,0,0.12)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 2px 8px rgba(0,0,0,0.08)';
+              }}
+            >
               <div style={{fontSize: '2.5rem', marginBottom: '1rem'}}>🦊</div>
               <Heading as="h3">GitLab</Heading>
               <p>
@@ -128,54 +176,71 @@ export default function Contact(): ReactNode {
                   View GitLab profile
                 </a>
               </p>
-              <p style={{fontSize: '0.9rem', color: 'var(--ifm-color-emphasis-700)'}}>
+              <p style={{fontSize: '0.9rem', color: 'var(--ifm-color-emphasis-700)', marginBottom: 0}}>
                 Explore my contributions
               </p>
             </div>
           </div>
 
-          <section style={{
-            padding: '2rem',
-            backgroundColor: 'var(--ifm-color-info-light)',
-            borderRadius: '8px',
-            marginTop: '2rem',
-          }}>
-            <Heading as="h2">What I'm looking for</Heading>
-            <ul style={{lineHeight: '1.8', marginTop: '1rem', fontSize: '1.05rem'}}>
-              <li>Technical writing projects</li>
-              <li>Full-time or contract-based roles</li>
-              <li>Documentation lead or content strategy roles</li>
-              <li>Collaboration with data or tech companies</li>
-            </ul>
+          <section style={{marginBottom: '3rem'}}>
+            <Heading as="h2" style={{marginBottom: '1.5rem'}}>What I'm looking for</Heading>
+            <div style={{
+              padding: '2rem',
+              background: 'var(--ifm-color-emphasis-0)',
+              borderRadius: '16px',
+              boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
+              border: '1px solid var(--ifm-color-emphasis-200)',
+            }}>
+              <ul style={{lineHeight: '1.8', margin: 0, fontSize: '1.05rem'}}>
+                <li>Technical writing projects</li>
+                <li>Full-time or contract-based roles</li>
+                <li>Documentation lead or content strategy roles</li>
+                <li>Collaboration with data or tech companies</li>
+              </ul>
+            </div>
           </section>
 
-          <section style={{
-            marginTop: '3rem',
-            padding: '2rem',
-            backgroundColor: 'var(--ifm-color-emphasis-100)',
-            borderRadius: '8px',
-            textAlign: 'center',
-          }}>
-            <Heading as="h2">Download my CV</Heading>
-            <p style={{marginTop: '1rem', marginBottom: '1.5rem'}}>
-              Get a printable copy of my experience, skills, and achievements.
-            </p>
-            <a 
-              href="https://drive.google.com/file/d/1GRXUg1uiGIPiXQtlNAslWxp3eoYxbnx_/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: 'inline-block',
-                padding: '0.75rem 2rem',
-                backgroundColor: 'var(--ifm-color-primary)',
-                color: 'white',
-                textDecoration: 'none',
-                borderRadius: '4px',
-                fontWeight: 'bold',
-              }}
-            >
-              Download my CV
-            </a>
+          <section style={{marginBottom: '3rem'}}>
+            <Heading as="h2" style={{marginBottom: '1.5rem'}}>Download my CV</Heading>
+            <div style={{
+              padding: '2rem',
+              background: 'var(--ifm-color-emphasis-0)',
+              borderRadius: '16px',
+              boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
+              border: '1px solid var(--ifm-color-emphasis-200)',
+            }}>
+              <p style={{marginTop: 0, marginBottom: '1.5rem', lineHeight: '1.7'}}>
+                Get a printable copy of my experience, skills, and achievements.
+              </p>
+              <a 
+                href="https://drive.google.com/file/d/1GRXUg1uiGIPiXQtlNAslWxp3eoYxbnx_/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.5rem',
+                  padding: '0.75rem 1.5rem',
+                  backgroundColor: 'var(--ifm-color-primary)',
+                  color: 'white',
+                  textDecoration: 'none',
+                  borderRadius: '8px',
+                  fontWeight: 600,
+                  fontSize: '0.95rem',
+                  transition: 'all 0.2s ease'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'translateY(-2px)';
+                  e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.boxShadow = 'none';
+                }}
+              >
+                Download CV
+              </a>
+            </div>
           </section>
         </div>
       </main>
