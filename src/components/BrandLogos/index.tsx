@@ -26,7 +26,7 @@ function Logo({src, alt}: {src: string; alt: string}): ReactNode {
 export default function BrandLogos(): ReactNode {
   return (
     <section className={clsx('container', styles.wrapper)}>
-      <Heading as="h2" className={styles.heading}>Brands I've worked with</Heading>
+      <Heading as="h2" className={styles.heading}>Organisations I've worked with</Heading>
       <div className={styles.grid}>
         {logos.map((logo, i) => (
           <Logo key={i} src={logo.src} alt={logo.alt} />

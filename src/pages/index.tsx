@@ -69,8 +69,9 @@ function HomepageHeader() {
             View my portfolio
           </Link>
           <a
-            href="/files/rhocela-pasigna-cv.pdf"
-            download
+            href="https://drive.google.com/file/d/1GRXUg1uiGIPiXQtlNAslWxp3eoYxbnx_/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
             style={{
               textDecoration: 'underline',
               fontSize: '1rem',
