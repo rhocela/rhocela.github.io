@@ -6,7 +6,7 @@ import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
-  image: string;
+  emoji: string;
   description: ReactNode;
   buttonText: string;
   buttonLink: string;
@@ -14,13 +14,12 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Technical documentation',
-    image: require('@site/static/img/technical-documentation.png').default,
+    title: 'Documentation leadership',
+    emoji: '📚',
     description: (
       <>
-        I build documentation systems that engineers actually use. From API references to 
-        operational guides, I create content that reduces support tickets and speeds up 
-        onboarding. Docs-as-code workflows keep everything current and version-controlled.
+        I build documentation systems that engineers actually use—selecting the right tools, establishing standards, and defining processes for each use case. From API references to operational guides, I create content that reduces 
+        support tickets and speeds up onboarding. Docs-as-code workflows keep everything current and version-controlled.
       </>
     ),
     buttonText: 'View portfolio',
@@ -28,43 +27,106 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Cross-functional collaboration',
-    image: require('@site/static/img/collaboration.png').default,
+    emoji: '🤝',
     description: (
       <>
-        I bridge technical and non-technical teams, turning discussions into 
-        actionable documentation. By working directly with technical teams across the stack, I catch 
-        knowledge gaps and create content that serves both internal teams and end users.
+        From marketing to engineering teams, data to cloud teams, 
+        I work across the stack to capture knowledge and create content 
+        that serves both internal and external audiences. By bridging teams, 
+        I ensure documentation is accurate, comprehensive, and aligned with user needs.
       </>
     ),
     buttonText: 'Read testimonials',
     buttonLink: '/testimonials',
   },
   {
-    title: 'Agile leadership',
-    image: require('@site/static/img/agile.png').default,
+    title: 'Versatile leadership',
+    emoji: '⚡',
     description: (
       <>
-        As Scrum Master, I keep teams moving—identifying blockers, managing dependencies, escalating issues,
-        and surfacing risks before they derail sprints. I facilitate standups and Agile ceremonies 
-        that lead to action, not just discussion.
+        From team member and individual contributor to documentation lead and Scrum Master—
+        experience across multiple roles provides deep insights into team 
+        dynamics, leadership, collaboration, and Agile practices.
       </>
     ),
     buttonText: 'Learn more',
     buttonLink: '/about',
   },
+  {
+    title: 'Global perspective',
+    emoji: '🌍',
+    description: (
+      <>
+        I've collaborated with teams across Asia, Europe, Americas, and beyond—adapting to 
+        different working styles, communication preferences, and cultural expectations. This 
+        flexibility makes me effective in any team environment and strengthens how I document for diverse audiences.
+      </>
+    ),
+    buttonText: 'See my background',
+    buttonLink: '/about',
+  },
+  {
+    title: 'Cross-industry expertise',
+    emoji: '🏢',
+    description: (
+      <>
+        Experience spans marketing consulting for IT platforms, logistics SaaS, data integration 
+        and cloud adoption, and currently government data services. Each industry brings different 
+        technical challenges and user needs—translating complex domain knowledge into clear documentation is the constant.
+      </>
+    ),
+    buttonText: 'Explore experience',
+    buttonLink: '/about',
+  },
 ];
 
-function Feature({title, image, description, buttonText, buttonLink}: FeatureItem) {
+function Feature({title, emoji, description, buttonText, buttonLink}: FeatureItem, index: number) {
+  const isEven = index % 2 === 0;
+  
   return (
-    <div className={clsx('col col--4')}>
-      <div className={styles.featureCard}>
-        <div className="text--center">
-          <img className={styles.featureImg} src={image} alt={title} />
-        </div>
-        <div className="text--center padding-horiz--md">
-          <Heading as="h3">{title}</Heading>
-          <p>{description}</p>
-          <div style={{marginTop: '1.5rem'}}>
+    <div className={clsx('col col--12')} style={{
+      marginBottom: '2.5rem',
+      display: 'flex',
+      justifyContent: 'center'
+    }}>
+      <div style={{
+        width: '85%',
+        background: 'var(--ifm-color-emphasis-0)',
+        borderRadius: '16px',
+        padding: '2rem 2.5rem',
+        boxShadow: '0 2px 8px rgba(0, 0, 0, 0.08)',
+        border: '1px solid var(--ifm-color-emphasis-200)',
+        transition: 'transform 0.2s ease, box-shadow 0.2s ease'
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.transform = 'translateY(-4px)';
+        e.currentTarget.style.boxShadow = '0 8px 20px rgba(0, 0, 0, 0.12)';
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.transform = 'translateY(0)';
+        e.currentTarget.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.08)';
+      }}>
+        <div style={{
+          display: 'flex',
+          alignItems: 'flex-start',
+          gap: '2rem',
+          textAlign: 'left',
+          flexDirection: isEven ? 'row-reverse' : 'row'
+        }}>
+          <div style={{
+            fontSize: '3rem',
+            minWidth: '60px',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'flex-start',
+            paddingTop: '0.25rem',
+            flexShrink: 0
+          }}>
+            {emoji}
+          </div>
+          <div style={{flex: 1}}>
+            <Heading as="h3" style={{marginBottom: '0.75rem', fontSize: '1.4rem'}}>{title}</Heading>
+            <p style={{marginBottom: '1.25rem', lineHeight: '1.7', opacity: 0.9}}>{description}</p>
             <Link
               className="button button--primary button--sm"
               to={buttonLink}>
@@ -83,7 +145,7 @@ export default function HomepageFeatures(): ReactNode {
       <div className="container">
         <div className="row">
           {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
+            <Feature key={idx} {...props} index={idx} />
           ))}
         </div>
       </div>
