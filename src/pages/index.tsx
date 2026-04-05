@@ -67,7 +67,10 @@ function HomepageHeader() {
         }}>
           <Link
             className="button button--secondary button--lg"
-            to="/portfolio">
+            to="/portfolio"
+            style={{
+              border: '2px solid rgba(255, 255, 255, 0.3)'
+            }}>
             View my portfolio
           </Link>
           <a
@@ -75,10 +78,26 @@ function HomepageHeader() {
             target="_blank"
             rel="noopener noreferrer"
             style={{
-              textDecoration: 'underline',
-              fontSize: '1rem',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.5rem',
+              padding: '0.75rem 1.5rem',
+              backgroundColor: 'transparent',
               color: 'white',
-              opacity: 0.9
+              textDecoration: 'none',
+              borderRadius: '8px',
+              fontWeight: 600,
+              fontSize: '1rem',
+              border: '1px solid rgba(255, 255, 255, 0.6)',
+              transition: 'all 0.2s ease'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.15)';
+              e.currentTarget.style.transform = 'translateY(-2px)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = 'transparent';
+              e.currentTarget.style.transform = 'translateY(0)';
             }}>
             Download CV
           </a>
