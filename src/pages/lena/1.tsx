@@ -28,14 +28,15 @@ export default function Uno(): ReactNode {
       }
       challengeText={
         <>
-          Every adventure needs the right equipment.<br /><br />
+          Every adventure needs the right equipment.<br />
+          Begin by finding yours:<br /><br />
           I've committed many crimes in this house,<br />
           yet I somehow never live in fear.<br /><br />
           I've done it once, maybe twice...<br />
-          (Okay fine—repeatedly! Let's be precise!)<br /><br />
-          So go and investigate the crime scene<br />
-          Until you find a clue<br />
-          Where every piece is grouped by two...<br />
+          Okay fine—REPEATEDLY! If I'm being precise<br /><br />
+          So go and check the crime scene<br />
+          Investigate and find the clue<br />
+          It's where every piece is grouped by two...<br />
           And matching pairs disappear from your view. 🫢
         </>
       }

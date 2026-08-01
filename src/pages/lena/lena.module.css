@@ -66,6 +66,37 @@
   margin-bottom: 0.5rem;
 }
 
+.progressWrap {
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+.progressTrack {
+  width: 100%;
+  max-width: 320px;
+  height: 10px;
+  margin: 0 auto 0.45rem;
+  background: #dce9df;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, #4a7c59 0%, #2d5a3d 100%);
+  border-radius: 999px;
+  transition: width 0.25s ease;
+}
+
+.progressLabel {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #4a7c59;
+  margin: 0;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 /* ── Section heading ── */
 .sectionTitle {
   text-align: center;

@@ -9,6 +9,10 @@ interface ChallengePageProps {
   message: ReactNode;
   challengeText: ReactNode;
   hintText: ReactNode;
+  progress?: {
+    current: number;
+    total: number;
+  };
 }
 
 export default function ChallengePage({
@@ -17,6 +21,7 @@ export default function ChallengePage({
   message,
   challengeText,
   hintText,
+  progress,
 }: ChallengePageProps): ReactNode {
   const [hintOpen, setHintOpen] = useState(false);
 
@@ -34,7 +39,20 @@ export default function ChallengePage({
       <main className={styles.pageMain}>
         <div className={styles.container}>
 
-          <p className={styles.pageCounter}>Challenge {pageNum}</p>
+          {progress ? (
+            <div className={styles.progressWrap} aria-label={`Progress ${progress.current} of ${progress.total}`}>
+              <div className={styles.progressTrack}>
+                <div
+                  className={styles.progressFill}
+                  style={{width: `${(progress.current / progress.total) * 100}%`}}
+                />
+              </div>
+              <p className={styles.progressLabel}>{progress.current} / {progress.total}</p>
+            </div>
+          ) : (
+            <p className={styles.pageCounter}>Challenge {pageNum}</p>
+          )}
+
           <h2 className={styles.sectionTitle}>{h2Title}</h2>
 
           <div className={styles.messageCard}>

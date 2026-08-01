@@ -9,20 +9,20 @@ export default function Dos(): ReactNode {
       message={
         <>
           <p>Congratulations! 🧦</p>
-          <p>You've already solved the first challenge.</p>
+          <p>You've solved the first challenge.</p>
           <p>
-            I wasn't too worried...<br />
-            I knew you'd immediately think, “If a pair is missing...” 😂
+            Well, what can I say...<br />
+            “Guilty as charged...” 😂
           </p>
           <p>
-            And nothing dissolves my guilt quite like hearing you say,<br />
+            But nothing dissolves my guilt but to hear you say,<br />
             “It’s not stealing if it’s ALSO yours.”
           </p>
           <p>Thank you, meine Herzen. 🥹</p>
-          <p>Now you're officially equipped for today's adventure in the wild.</p>
+          <p>Now you're officially equipped for the next adventure—in the WILD!</p>
         </>
       }
-      challengeText="Somewhere in this home lives the biggest proof that your thumb not only has a color—it also has magical powers that even velvet thrives in your hands."
+      challengeText="Somewhere in this home lives the biggest proof that your thumb not only has a color—it also has magical powers... that even velvet thrives in your hands."
       hintText="Velvet green body. White veins. 🌱"
     />
   );
