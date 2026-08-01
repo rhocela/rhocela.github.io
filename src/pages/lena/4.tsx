@@ -28,9 +28,11 @@ export default function Cuatro(): ReactNode {
       }
       challengeText={
         <>
-          Not where humans sit,<br />
-          Not where spiders sleep,<br /><br />
-          Find hers. 🐕 <br />
+         
+          Now that my accomplice has completed her mission...<br />
+          She's earned a well-deserved rest.<br />
+          Every queen deserves a throne.<br />
+          Find hers.
 
         </>
       }

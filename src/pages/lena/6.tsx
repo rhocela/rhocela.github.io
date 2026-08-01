@@ -26,7 +26,14 @@ export default function Seis(): ReactNode {
           This time... no guessing required. 😉
         </>
       }
-      hintText="The legendary object is a small item you already know well—something that once fooled your mind and is now waiting to be found again."
+      hintText={
+        <>
+          Some things are worth holding on to.<br />
+          Some things are meant to disappear.<br />
+          Flying thoughts and fears<br />
+          You know where they belong.
+        </>
+      }
       progress={{current: 6, total: 15}}
     />
   );
