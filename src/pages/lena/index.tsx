@@ -75,7 +75,7 @@ export default function LenaHome(): ReactNode {
 
           <div className={styles.ctaSection}>
             <h3 className={styles.ctaTitle}>Ready to unwrap your gift? 🎁</h3>
-            <Link to="/lena/uno" className={styles.ctaButton}>
+            <Link to="/lena/1" className={styles.ctaButton}>
               Sige Go! 🌿
             </Link>
           </div>
