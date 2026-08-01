@@ -1,6 +1,5 @@
 import type {ReactNode} from 'react';
 import {useState} from 'react';
-import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import styles from './lena.module.css';
 
@@ -10,9 +9,6 @@ interface ChallengePageProps {
   message: ReactNode;
   challengeText: ReactNode;
   hintText: string;
-  /** slug of the next challenge page; omit on the final page */
-  nextSlug?: string;
-  nextLabel?: string;
 }
 
 export default function ChallengePage({
@@ -21,8 +17,6 @@ export default function ChallengePage({
   message,
   challengeText,
   hintText,
-  nextSlug,
-  nextLabel = 'Found it! Next clue →',
 }: ChallengePageProps): ReactNode {
   const [hintOpen, setHintOpen] = useState(false);
 
@@ -57,14 +51,6 @@ export default function ChallengePage({
               🌱 Emergency Hint
             </button>
           </div>
-
-          {nextSlug && (
-            <div className={styles.ctaSection}>
-              <Link to={nextSlug} className={styles.ctaButton}>
-                {nextLabel}
-              </Link>
-            </div>
-          )}
 
         </div>
       </main>

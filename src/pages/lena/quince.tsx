@@ -8,7 +8,6 @@ export default function Quince() {
       message={<p>Content coming soon.</p>}
       challengeText="Challenge details coming soon."
       hintText="Hint coming soon."
-      nextLabel="Claim your gift! 🎁"
     />
   );
 }
