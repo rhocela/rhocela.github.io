@@ -17,7 +17,7 @@ export default function Tres(): ReactNode {
             Even spiders.
           </p>
           <p>(And me 🥹.)</p>
-          <p>You make us feel safe. And think it's one of your greatest gifts. ❤️</p>
+          <p>You make us feel safe. And I think it's one of your greatest gifts. ❤️</p>
           <p>
             And speaking of the things you keep safe and alive, someone helped me put this little adventure together.
           </p>

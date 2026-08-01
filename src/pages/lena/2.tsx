@@ -24,6 +24,7 @@ export default function Dos(): ReactNode {
       }
       challengeText="Somewhere in this home lives the biggest proof that your thumb not only has a color—it also has magical powers... that even velvet thrives in your hands."
       hintText="Velvet green body. White veins. 🌱"
+      progress={{current: 2, total: 15}}
     />
   );
 }

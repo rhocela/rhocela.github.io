@@ -43,6 +43,7 @@ export default function Uno(): ReactNode {
       hintText={
         <>The scene of the crime is inside a <strong>shelf</strong> where your feet get dressed. If you empty it out, you'll find a <strong>coded</strong> body laying on the ground.</>
       }
+      progress={{current: 1, total: 15}}
     />
   );
 }

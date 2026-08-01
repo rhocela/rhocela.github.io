@@ -22,22 +22,20 @@ export default function Cuatro(): ReactNode {
             I'm sure she still thinks I'm just this weird human who occasionally steals your attention...
           </p>
           <p>
-            But little does she know my secret agenda is to get her fully in my team to make our favorite person happy for the rest of our lives. ❤️
+            But little does she know my secret agenda is to get her fully on my team to make our favorite person happy for the rest of our lives. ❤️
           </p>
         </>
       }
       challengeText={
         <>
-          <strong>Emergency Hint</strong><br /><br />
-          Not where humans sit.<br />
-          Not where spiders sleep.<br /><br />
-          <strong>Banished from the green throne...</strong><br />
-          <strong>She claimed the grey one and made it her home.</strong><br /><br />
-          <strong>Turn it over. 👑🐾</strong>
+          Not where humans sit,<br />
+          Not where spiders sleep,<br /><br />
+          Find hers. 🐕 <br />
+
         </>
       }
       hintText={
-        <>Not where humans sit. Not where spiders sleep. The clue is on the grey seat/cover that Bella claimed as her home.</>
+        <>Banished from the green cushions, she claimed the grey one and made it her home. (Turn it over).</>
       }
       progress={{current: 4, total: 15}}
     />
