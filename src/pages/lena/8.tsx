@@ -9,13 +9,16 @@ export default function Ocho(): ReactNode {
       message={
         <>
           <p>Before I met you,</p>
-          <p>I never imagined someone could turn “AAAAAHHHH!” into “Awww... she's adorable.” 😂</p>
+          <p>I never imagined someone could turn </p>
+          <p>“AAAAAHHHH!”</p>
+          <p>into</p>
+          <p>“Awww... she's adorable.” 😂</p>
           <p>Yet somehow...</p>
-          <p>here we are.</p>
+          <p>Here we are.</p>
         </>
       }
-      challengeText="Go pay a visit to one of the tiniest fluffiest ladies of the house."
-      hintText="The tiniest fluffiest lady of the house is a small pet with soft fur and a very cute presence."
+      challengeText="Go pay a visit to one of the fluffy ladies of the house."
+      hintText="Your first Iiiiiiiiiiii! 🕷️"
       progress={{current: 8, total: 15}}
     />
   );

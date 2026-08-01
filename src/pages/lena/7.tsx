@@ -22,17 +22,17 @@ export default function Siete(): ReactNode {
           Do you remember me?<br /><br />
           For a little while, I belonged to someone else.<br />
           Then one day, I finally found where I was always meant to be.<br /><br />
-          She says I was never hers to keep.<br />
-          And that she was only my carrier...<br />
-          until I find my rightful owner.<br />
+          Someone once said I was never hers to keep.<br />
+          And that she was only my carrier<br />
+          Until I find my rightful owner.<br />
           And THAT, I did.<br /><br />
           You might think my story ends there...<br />
           But it doesn't.<br /><br />
-          I was never really the gift.<br />
+          I was never really THE gift.<br />
           I was only pointing you toward something greater.<br />
           A message.<br />
           A promise.<br />
-          And that promise will never change.<br />
+          A Word that will never change.<br />
           A Word that will never return void.<br /><br />
           Come and visit me where I live.
         </>
