@@ -8,7 +8,7 @@ interface ChallengePageProps {
   h2Title: ReactNode;
   message: ReactNode;
   challengeText: ReactNode;
-  hintText: string;
+  hintText: ReactNode;
 }
 
 export default function ChallengePage({
