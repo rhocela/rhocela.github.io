@@ -5,7 +5,7 @@ export default function Quince(): ReactNode {
   return (
     <ChallengePage
       pageNum="15 of 15"
-      h2Title="Finally"
+      h2Title="Koko-who?!"
       message={
         <>
           <p>BRAVO here we go!</p>

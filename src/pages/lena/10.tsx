@@ -52,7 +52,7 @@ export default function Diez(): ReactNode {
               placeholder="Type the password"
             />
             <button className={styles.passwordButton} type="button" onClick={handleUnlock}>
-              Unlock
+              Abli!
             </button>
             {feedback ? (
               <p className={styles.passwordFeedback} role="alert">{feedback}</p>
