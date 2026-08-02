@@ -61,7 +61,7 @@ export default function ChallengePage({
 
           <div className={styles.challengeBlock}>
             <p className={styles.challengeLabel}>Your Challenge</p>
-            <p className={styles.challengeText}>{challengeText}</p>
+            <div className={styles.challengeText}>{challengeText}</div>
           </div>
 
           <div className={styles.hintLinkWrap}>

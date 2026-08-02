@@ -179,6 +179,7 @@
   line-height: 1.8;
   color: #1e3d2a;
   margin: 0;
+  white-space: pre-line;
 }
 
 /* ── Emergency hint link ── */

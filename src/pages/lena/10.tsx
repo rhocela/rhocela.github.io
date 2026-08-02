@@ -19,8 +19,8 @@ export default function Diez(): ReactNode {
           <p>Be still... :) ❤️❤️</p>
         </>
       }
-      challengeText="What came to your mind in the past minute?"
-      hintText="Call Ash or Mic. Tell them something... anything. And include at least 1 Bisaya word. They will give you the next step."
+      challengeText="What came to your mind in the past minute? Call Ash or Mic. Tell them something... anything—AND include at least 1 Bisaya word. They will give you the next step."
+      hintText="You read it right. CALL 😜"
       progress={{current: 10, total: 15}}
     />
   );

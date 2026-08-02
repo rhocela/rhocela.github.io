@@ -14,9 +14,26 @@ export default function Once(): ReactNode {
           <p>Just stay with that memory for a moment. ❤️</p>
         </>
       }
-      challengeText="I can't talk but I can speak without touching."
-      hintText="Turn on your Bluetooth. NOW!"
+            challengeText={
+        <>
+          I have no lips,<br />
+          I have no tongue.<br /><br />
+          Yet somehow,<br />
+          my songs are sung.<br /><br />
+          Quiet I sit,<br />
+          both day and night.<br /> 
+          Until someone<br />
+          wakes me right.<br /><br />
+          Come wake me up,<br />
+          don't let me hide...<br />
+          A familiar voice<br />
+          is trapped inside.
+        </>
+      }
+      hintText="Slide your finger on my body from left to right. Then turn on your Bluetooth! "
       progress={{current: 11, total: 15}}
     />
   );
 }
+
+
