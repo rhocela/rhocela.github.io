@@ -1,7 +1,20 @@
-import type {ReactNode} from 'react';
+import {useState, type ReactNode} from 'react';
 import ChallengePage from './ChallengePage';
+import styles from './lena.module.css';
 
 export default function Tres(): ReactNode {
+  const [password, setPassword] = useState('');
+  const [feedback, setFeedback] = useState('');
+
+  const handleUnlock = () => {
+    if (password.trim().toLowerCase() === 'lena') {
+      window.location.assign('/lena/4');
+      return;
+    }
+
+    setFeedback('Sayop! Balik.');
+  };
+
   return (
     <ChallengePage
       pageNum="3 of 15"
@@ -41,7 +54,29 @@ export default function Tres(): ReactNode {
           Ask her to perform one of her favorite tricks, record it, and send the video to this secret agent via WhatsApp: +65 8145 0718.<br /><br />
           Along with one message—and one message only:<br />
           Ask this person “Are you beautiful?” in Bisaya.<br />
-          Nothing else. Quick! Before this agent loses patience!
+          Nothing else. Quick! Before this agent loses patience!<br /><br />
+          <div className={styles.passwordGate}>
+            <label className={styles.passwordLabel} htmlFor="lena-password">Tubag:</label>
+            <input
+              id="lena-password"
+              className={styles.passwordInput}
+              type="text"
+              value={password}
+              onChange={(event) => {
+                setPassword(event.target.value);
+                if (feedback) {
+                  setFeedback('');
+                }
+              }}
+              placeholder="Type the password"
+            />
+            <button className={styles.passwordButton} type="button" onClick={handleUnlock}>
+              Abli!
+            </button>
+            {feedback ? (
+              <p className={styles.passwordFeedback} role="alert">{feedback}</p>
+            ) : null}
+          </div>
         </>
       }
       hintText={

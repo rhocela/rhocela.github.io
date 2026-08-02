@@ -1,7 +1,20 @@
-import type {ReactNode} from 'react';
+import {useState, type ReactNode} from 'react';
 import ChallengePage from './ChallengePage';
+import styles from './lena.module.css';
 
 export default function Diez(): ReactNode {
+  const [answer, setAnswer] = useState('');
+  const [feedback, setFeedback] = useState('');
+
+  const handleUnlock = () => {
+    if (answer.trim() === '35') {
+      window.location.assign('/lena/11');
+      return;
+    }
+
+    setFeedback('Sayop! Balik.');
+  };
+
   return (
     <ChallengePage
       pageNum="10 of 15"
@@ -19,7 +32,34 @@ export default function Diez(): ReactNode {
           <p>Be still... :) ❤️❤️</p>
         </>
       }
-      challengeText="What came to your mind in the past minute? Call Ash or Mic. Tell them something... anything—AND include at least 1 Bisaya word. They will give you the next step."
+      challengeText={
+        <>
+          <p>What came to your mind in the past minute? Call Ash or Mic. Tell them something... anything—AND include at least 1 Bisaya word. They will give you the next step.</p>
+          <div className={styles.passwordGate}>
+            <label className={styles.passwordLabel} htmlFor="lena-10-password">Tubag</label>
+            <input
+              id="lena-10-password"
+              className={styles.passwordInput}
+              type="number"
+              inputMode="numeric"
+              value={answer}
+              onChange={(event) => {
+                setAnswer(event.target.value);
+                if (feedback) {
+                  setFeedback('');
+                }
+              }}
+              placeholder="Type the password"
+            />
+            <button className={styles.passwordButton} type="button" onClick={handleUnlock}>
+              Unlock
+            </button>
+            {feedback ? (
+              <p className={styles.passwordFeedback} role="alert">{feedback}</p>
+            ) : null}
+          </div>
+        </>
+      }
       hintText="You read it right. CALL 😜"
       progress={{current: 10, total: 15}}
     />
