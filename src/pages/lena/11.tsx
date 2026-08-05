@@ -11,15 +11,15 @@ export default function Once(): ReactNode {
           <p>Quick question.</p>
           <p>What song reminds you most of us?</p>
           <p>There isn't a wrong answer.</p>
-          <p>Just stay with that memory for a moment. ❤️</p>
+          <p>Just stay with that memory for a moment. <br /> 🎶</p>
         </>
       }
             challengeText={
         <>
           I have no lips,<br />
           I have no tongue.<br /><br />
-          Yet somehow,<br />
-          my songs are sung.<br /><br />
+          Yet from my depths,<br />
+          Songs are sung.<br /><br />
           Quiet I sit,<br />
           both day and night.<br /> 
           Until someone<br />
@@ -30,7 +30,7 @@ export default function Once(): ReactNode {
           is trapped inside.
         </>
       }
-      hintText="Slide your finger on my body from left to right. Then turn on your Bluetooth! "
+      hintText="Slide your finger on my body from left to right, and then turn on your colored tooth.⚡ "
       progress={{current: 11, total: 15}}
     />
   );

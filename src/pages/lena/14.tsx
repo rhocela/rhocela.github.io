@@ -23,20 +23,19 @@ export default function Catorce(): ReactNode {
         <>
           <p>Speaking of home...</p>
           <p>Thank you for giving me room in yours.</p>
-          <p>Your mom Anne, Freddie, and Maddie...</p>
+          <p>Your mom, Freddie, and Maddie...</p>
           <p>Every one of them has made it easy for me to imagine what &quot;family with you&quot; could look and feel like.</p>
-          <p>❤️</p>
+          <p>🏡</p>
         </>
       }
       challengeText={
         <>
           <p>Team Philippines has completed their mission.</p>
           <p>Now it's time to recruit Team Germany. 🇩🇪 </p>
-          <p>There's someone...</p>
-          <p>who used to be under the same roof.</p>
-          <p>Now they're hours away.</p>
-          <p>Tell this person one thing you miss about them...</p>
-          <p>and one thing you love most about them.</p>
+          <p>There is someone who used to be under the same roof.</p>
+          <p>Now this person is hours away.</p>
+          <p>To get the next clue, tell this person two things: </p> 
+          <p> One thing you miss about them, and one thing you love about them.</p>
           <div className={styles.passwordGate}>
             <label className={styles.passwordLabel} htmlFor="lena-14-password">Tubag</label>
             <input

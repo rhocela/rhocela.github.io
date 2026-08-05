@@ -8,12 +8,13 @@ export default function Cuatro(): ReactNode {
       h2Title="Mission Accomplished"
       message={
         <>
-          <p>Well done! You have caught the accomplice.</p>
+          <p>Well done!<br />
+          You have caught my accomplice and gained your own secret agent.</p>
           <p>
             Before I met you, I never imagined I'd love someone else's dog this much.
           </p>
           <p>
-            But somewhere between the countless “Raus Pipis!”... and the clingy blonde fur everywhere...
+            But somewhere between the countless “Raus Pipis!” and the extensive fur shower...
           </p>
           <p>
             Bella quietly became family to me too.
@@ -22,7 +23,7 @@ export default function Cuatro(): ReactNode {
             I'm sure she still thinks I'm just this weird human who occasionally steals your attention...
           </p>
           <p>
-            But little does she know my secret agenda is to get her fully on my team to make our favorite person happy for the rest of our lives. ❤️
+            But my goal is to get her fully on my team to make our favorite person happy for the rest of our lives. 🏡
           </p>
         </>
       }

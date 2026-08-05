@@ -17,13 +17,13 @@ export default function Trece(): ReactNode {
           <p>is that we never just make food.</p>
           <p>We always end up making memories.</p>
           <p>The moments some would call ordinary...</p>
-          <p>have become some of my favorite memories with you.</p>
+          <p>have become some of my favorite moments with you.</p>
           <p>Whenever you we arrive home, it's almost always the first place we go to.</p>
-          <p>Somehow, this little space in your home has become a home within your home.</p>
+          <p>Somehow, this little space has become a home within your home.</p>
           <p>Here we had serious conversations,</p>
           <p>Shared sad and happy tears,</p>
           <p>Danced as we waited,</p>
-          <p>Flirted, hugged, and kissed 😜</p>
+          <p>Flirted, hugged, and kissed 😏</p>
           <p>A glimpse of what life together could look like.</p>
           <p>Here, we have said several times,</p>
           <p>&quot;I love doing this with you&quot; and</p>
@@ -32,12 +32,15 @@ export default function Trece(): ReactNode {
       }
       challengeText={
         <>
-          <p>Your Challenge:</p>
-          <p>Today's secret ingredient is... ❤️ Love 🧈 Butter and... a mysterious note:</p>
-          <p><i>I was sent on a very important mission.</i></p>
-          <p><i>Convert one German...</i></p>
-          <p><i>into an honorary Asian.</i></p>
-          <p><i>Mission Status: KEEP WARM.</i></p>
+          <p>Today's secrets ingredient are... <br />
+          ❤️ Love <br /> 
+          🧈 Butter <br /> 
+          🗒️ A mysterious note:<br /> <br />
+          <i>I was sent on a very important mission.</i><br />
+          <i>Convert one German...</i><br />
+          <i>into an honorary Asian.</i><br /> <br />
+        
+          Mission Status: KEEP WARM.</p>
         </>
       }
       hintText="Ding! Time to serve the rice!"

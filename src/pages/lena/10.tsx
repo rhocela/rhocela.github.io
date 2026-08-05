@@ -22,19 +22,22 @@ export default function Diez(): ReactNode {
       message={
         <>
           <p>You're really crushing this! I know it. 💪🏻</p>
-          <p>And I hope this puts a little smile on your face.</p>
+          <p>And I hope this has caused a smile on your face.</p>
           <p>Now, for the next minute...</p>
           <p>Don't solve anything.</p>
           <p>Go to the porch.</p>
-          <p>Sit on your couch.</p>
+          <p>Sit on the couch.</p>
           <p>Lean back, and relax.</p>
           <p>Take 5 good breaths.</p>
-          <p>Be still... :) ❤️❤️</p>
+          <p>Be still :) <br /> 🤍</p>
         </>
       }
       challengeText={
         <>
-          <p>What came to your mind in the past minute? Call Ash or Mic. Tell them something... anything—AND include at least 1 Bisaya word. They will give you the next step.</p>
+          <p>What came to your mind in the past minute? </p> 
+          <p>Well, because you've been so good in these challenges, two new Secret Agents have come to your rescue! 🕵🏻‍♀️🕵🏻‍♂️</p>
+          <p> They call themselves your "Spokespersons".🎙️</p> 
+          <p> Call one of your Spokespersons. Tell them one full sentence in German and translate it to Bisaya. They'll give you the clue to the next secret code.</p>
           <div className={styles.passwordGate}>
             <label className={styles.passwordLabel} htmlFor="lena-10-password">Tubag</label>
             <input
@@ -49,7 +52,7 @@ export default function Diez(): ReactNode {
                   setFeedback('');
                 }
               }}
-              placeholder="Type the password"
+              placeholder="Secret code"
             />
             <button className={styles.passwordButton} type="button" onClick={handleUnlock}>
               Abli!
@@ -60,7 +63,7 @@ export default function Diez(): ReactNode {
           </div>
         </>
       }
-      hintText="You read it right. CALL 😜"
+      hintText="You read it right. CALL 📞😜"
       progress={{current: 10, total: 15}}
     />
   );

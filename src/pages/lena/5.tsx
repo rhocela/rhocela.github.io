@@ -15,20 +15,20 @@ export default function Cinco(): ReactNode {
             A hug.<br />
             A rub.
           </p>
-          <p>Somehow my body has an involuntary habit of wandering off until it finds its favorite place.</p>
+          <p>Somehow my body has an involuntary habit of wandering off until it finds its favorite place. 😏</p>
           <p>I don't even think about it anymore.</p>
-          <p>I guess my body just knows where it belongs. ❤️</p>
+          <p>I guess my body just knows where it belongs. 🏡 </p>
         </>
       }
       challengeText={
         <>
-          The next time we share a moment in this place...<br />
-          Not even real silver can stop my pace<br />
-          So say a little prayer, like we always do<br />
-          And go where my wandering feet always find you
+          The next time we share a moment in this place,<br />
+          Not even real silver can stop my pace.<br />
+          So say a little prayer, like we always do,<br />
+          And go where my wandering feet always find you.
         </>
       }
-      hintText="A place where we dine. Where my feet touch your thighs. Take your seat and look under."
+      hintText="Take your seat at the place we dine. Look down where my feet touch your thighs."
       progress={{current: 5, total: 15}}
     />
   );

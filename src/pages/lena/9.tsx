@@ -10,9 +10,9 @@ export default function Nueve(): ReactNode {
         <>
           <p>One table.</p>
           <p>Three plates.</p>
-          <p>Two hot German ladies. 😂</p>
+          <p>Two hot German ladies. <br /> 👯‍♀️😂</p>
           <p>One lucky Filipino.</p>
-          <p>And one moment saved in my heart. ❤️</p>
+          <p>And one moment saved in my heart.</p>
         </>
       }
       challengeText={

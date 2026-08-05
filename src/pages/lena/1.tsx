@@ -17,7 +17,7 @@ export default function Uno(): ReactNode {
           </p>
           <p>
             But if you ever took me to court... ⚖️<br />
-            I know exactly what I'd be convicted of.
+            I know exactly what I'd be guilty of.
           </p>
           <p>
             Fortunately for me...<br />
@@ -29,7 +29,7 @@ export default function Uno(): ReactNode {
       challengeText={
         <>
           Every adventure needs the right equipment.<br />
-          Begin by finding yours:<br /><br />
+          Begin by finding yours.<br /><br />
           I've committed many crimes in this house,<br />
           yet I somehow never live in fear.<br /><br />
           I've done it once, maybe twice...<br />

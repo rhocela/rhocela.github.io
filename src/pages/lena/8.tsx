@@ -18,7 +18,7 @@ export default function Ocho(): ReactNode {
         </>
       }
       challengeText="Go pay a visit to one of the fluffy ladies of the house."
-      hintText="Your first Iiiiiiiiiiii! 🕷️"
+      hintText="Look under the wooden plank of your first Iiiiiiiiiiii! 🕷️"
       progress={{current: 8, total: 15}}
     />
   );

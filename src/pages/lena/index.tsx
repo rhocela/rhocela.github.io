@@ -18,7 +18,7 @@ export default function LenaHome(): ReactNode {
       <main className={styles.pageMain}>
         <div className={styles.container}>
 
-          <h2 className={styles.sectionTitle}>Operation Geburtstag ❤️</h2>
+          <h2 className={styles.sectionTitle}>Operation 🕵🏻‍♀️ Geburtstag</h2>
 
           <div className={styles.messageCard}>
             <p className={styles.openingLine}>
@@ -27,12 +27,12 @@ export default function LenaHome(): ReactNode {
 
             <p className={styles.poem}>
               I wish I could be there to give you<br />
-              good morning kisses,<br />
+              morning kisses,<br />
               make you tea,<br />
               cook you stir-fry noodles,<br />
-              go Gassi with you and Bella,<br />
-              annoy you all day,<br />
-              and give you a massage.
+              Gassi with you and Bella,<br />
+              give you a massage,<br />
+              and annoy you all day.
             </p>
 
             <p className={styles.poem}>
@@ -61,9 +61,9 @@ export default function LenaHome(): ReactNode {
             </p>
 
             <p className={styles.poem}>
-              So take your time<br />
-              laugh at my corny clues<br />
-              roll your eyes when they're terrible<br />
+              So take your time,<br />
+              laugh at my corny clues,<br />
+              roll your eyes when they're terrible,<br />
               and most of all,<br />
               enjoy and know that<br />
               <strong>You Are Loved.</strong>
@@ -74,9 +74,9 @@ export default function LenaHome(): ReactNode {
           </div>
 
           <div className={styles.ctaSection}>
-            <h3 className={styles.ctaTitle}>Ready to unwrap your gift? 🎁</h3>
+            <h3 className={styles.ctaTitle}>Ready to unwrap your gift? </h3>
             <Link to="/lena/1" className={styles.ctaButton}>
-              Sige Go! 🌿
+              Sige Go! 🎁
             </Link>
           </div>
 

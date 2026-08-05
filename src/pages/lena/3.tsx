@@ -21,7 +21,7 @@ export default function Tres(): ReactNode {
       h2Title="The Accomplice"
       message={
         <>
-          <p>One of the things I admire most about you is how naturally you care.</p>
+          <p>One of the things I admire most about you is how you naturally care.</p>
           <p>You somehow keep everything alive.</p>
           <p>
             Plants.<br />
@@ -29,7 +29,7 @@ export default function Tres(): ReactNode {
             Bella.<br />
             Even spiders.
           </p>
-          <p>(And me 🥹.)</p>
+          <p>(And me 🥹)</p>
           <p>You make us feel safe. And I think it's one of your greatest gifts. ❤️</p>
           <p>
             And speaking of the things you keep safe and alive, someone helped me put this little adventure together.
@@ -38,7 +38,7 @@ export default function Tres(): ReactNode {
             A member of our family has been feeding me classified information...
           </p>
           <p>
-            ...and has agreed to become my official accomplice.
+            this member has agreed to become my accomplice.
           </p>
           <p>I paid her in belly rubs.</p>
           <p>She accepted immediately. 🤷🏻‍♀️</p>
@@ -47,14 +47,16 @@ export default function Tres(): ReactNode {
       challengeText={
         <>
           <strong>Find my accomplice. 😎</strong><br /><br />
-          Give her a cuddle from me.<br />
-          This is NOT optional.<br />
-          Don't skip this or my accomplice will tell!<br /><br />
-          Bring her to the garden (or anywhere outside).<br />
-          Ask her to perform one of her favorite tricks, record it, and send the video to this secret agent via WhatsApp: +65 8145 0718.<br /><br />
-          Along with one message—and one message only:<br />
-          Ask this person “Are you beautiful?” in Bisaya.<br />
-          Nothing else. Quick! Before this agent loses patience!<br /><br />
+          STEP 1:<br />
+          Give her a cuddle from me. This is NOT optional.<br /><br />
+          STEP 2: <br />
+          Bring my accomplice to the garden or anywhere outside. Do a trick and video-record it. <br /> <br /> 
+          
+          STEP 3: <br />
+          Send the video to your Secret Agent via WhatsApp: +65 8145 0718. (Yep, fortunately for you, an innocent bystander has volunteered to be your Secret Agent to give you the next clue!) <br /> <br />
+
+          STEP 4: <br />Along with the video, ask your Secret Againt: “Are you beautiful?” in Bisaya. She will give you the clue to the secret code.<br />
+          <br />
           <div className={styles.passwordGate}>
             <label className={styles.passwordLabel} htmlFor="lena-password">Tubag:</label>
             <input
@@ -68,7 +70,7 @@ export default function Tres(): ReactNode {
                   setFeedback('');
                 }
               }}
-              placeholder="Type the password"
+              placeholder="Secret code"
             />
             <button className={styles.passwordButton} type="button" onClick={handleUnlock}>
               Abli!
@@ -80,7 +82,7 @@ export default function Tres(): ReactNode {
         </>
       }
       hintText={
-        <>The accomplice is your dog. Give her a cuddle from me and send the video to the number above.</>
+        <> Secret Agent unreachable? <br /> 🎟️ Call your Uyab hotline. <br /> NOTE: Calling this hotline has consequences. Use only when ABSOLUTELY necessary.</>
       }
       progress={{current: 3, total: 15}}
     />

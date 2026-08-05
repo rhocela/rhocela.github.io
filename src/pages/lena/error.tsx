@@ -40,13 +40,13 @@ export default function ErrorPage(): ReactNode {
                 You know...
               </p>
               <p>
-                The one who somehow always knows exactly what to say.
+                The one who always knows exactly what to say.
               </p>
               <p>
                 The one who holds true, sincere, encouraging, and life-giving words when you need it.
               </p>
               <p>
-                The one who once received an emergency drawing of a strawberry pimple. 🍓😂
+                The one who's been there for you, from nerve-wracking occasions to suspicious drawings of strawberry pimples. 🍓😂
               </p>
               <p>
                 Yes! THAT someone is my friend now too 😜💕
