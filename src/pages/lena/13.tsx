@@ -40,7 +40,7 @@ export default function Trece(): ReactNode {
           <i>Convert one German...</i><br />
           <i>into an honorary Asian.</i><br /> <br />
         
-          Mission Status: KEEP WARM.</p>
+          Mission Status: KEEP WARM</p>
         </>
       }
       hintText="Ding! Time to serve the rice!"
