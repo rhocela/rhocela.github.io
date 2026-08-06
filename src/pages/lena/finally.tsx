@@ -20,7 +20,8 @@ export default function FinallyPage(): ReactNode {
             <h2 className={styles.finalTitle}>Finally</h2>
 
             <div className={styles.finalText}>
-              <p> <strong> Happy Birthday, My Darling! ❤️ </strong> </p>
+              <p>♥️</p>
+              <p> <strong> Happy Birthday, My Darling!  </strong> </p>
               <p> 
                 I hope you enjoyed this little adventure as much as I enjoyed creating it—just by thinking about you in the little pit stops you visited today.
               </p>
@@ -36,9 +37,12 @@ export default function FinallyPage(): ReactNode {
               <p>
                 Consider this one very long, very tight hug.
               </p>
+              <p> ---</p>
               <p className={styles.finalSignature}>
-                Ich liebe dich vom Klitchen über die Philippinen bis zum Mond und immer wieder zurück.
-              </p>
+                 </p>
+
+              <p><sup>Did you notice the little keywords I left along the way? Text it to me if you know the full sentence. </sup></p>
+              <p> ♥️ </p>
             </div>
           </div>
         </div>

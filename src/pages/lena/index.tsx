@@ -22,7 +22,7 @@ export default function LenaHome(): ReactNode {
 
           <div className={styles.messageCard}>
             <p className={styles.openingLine}>
-              <strong>Good morning, Meine Mäusekind! 🐭❤️</strong>
+              <strong>Meine Mäusekind! 🐭❤️</strong>
             </p>
 
             <p className={styles.poem}>
@@ -30,7 +30,7 @@ export default function LenaHome(): ReactNode {
               morning kisses,<br />
               make you tea,<br />
               cook you stir-fry noodles,<br />
-              Gassi with you and Bella,<br />
+              gassi with you and Bella,<br />
               give you a massage,<br />
               and annoy you all day.
             </p>
@@ -58,8 +58,10 @@ export default function LenaHome(): ReactNode {
             </p>
 
             <p className={styles.poem}>
-              The final clue leads you to a little gift waiting patiently for you.
+              The final clue leads you to a little gift waiting patiently for you. <br /> 
             </p>
+
+            
 
             <p className={styles.poem}>
               So take your time,<br />
@@ -72,6 +74,7 @@ export default function LenaHome(): ReactNode {
 
             <p className={styles.closing}>Happy Birthday, My Darling!</p>
             <p className={styles.closing}>I love you more than I love jumpys. 😜🦘 <br />❤️</p>
+            <p> <sup>This box also contains items you may need for your adventure.</sup></p>
             
           </div>
 
