@@ -24,7 +24,7 @@ export default function Dos(): ReactNode {
         </>
       }
       challengeText="Somewhere in this home lives the biggest proof that your thumb not only has a color. It also has magical powers—even velvet thrives in your hands!"
-      hintText="I am green. I have velvent skin and white veins. 🌱"
+      hintText="I am green. I have velvet skin. I have white veins. 🌱"
       progress={{current: 2, total: 15}}
     />
   );
