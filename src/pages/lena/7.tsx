@@ -12,8 +12,8 @@ export default function Siete(): ReactNode {
           <p>I couldn't make a Schnitzeljagd about us without stopping here.</p>
           <p>Because I genuinely believe God wrote this chapter long before either of us knew it.</p>
           <p>I want to thank you for opening your heart to God again.</p>
-          <p>If there was only one gift to give you, I'd choose that for you in a heartbeat. </p>
-          <p>I'm only sure of a few things in this life--one of them is that you are so precious to God, and that God loves you sooo dearly, abosuletly and uncondtionally, more than I or anyone ever could.</p>
+          <p>If there was only one wish I could make, I'd choose that for you in a heartbeat. </p>
+          <p>I'm only sure of a few things in this life--one of them is that you are so precious to God, and that God loves you sooo dearly, absolutely and unconditionally, more than I or anyone ever could.</p>
           <p>As you open your heart to the posibility that THIS God is real, I trust that wherever it leads you, it's where the true and living God wants you to be. </p>
           <p> 🤍</p>
           <p> <sup>🔑i</sup></p>
