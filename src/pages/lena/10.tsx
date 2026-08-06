@@ -29,7 +29,8 @@ export default function Diez(): ReactNode {
           <p>Sit on the couch.</p>
           <p>Lean back, and relax.</p>
           <p>Take 5 good breaths.</p>
-          <p>Be still :) <br /> 🤍</p>
+          <p>Be still :) <br /> 🤍 <br /></p>
+          <p><sup>🔑from</sup></p>
         </>
       }
       challengeText={

@@ -26,6 +26,7 @@ export default function Catorce(): ReactNode {
           <p>Your mom, Freddie, and Maddie...</p>
           <p>Every one of them has made it easy for me to imagine what &quot;family with you&quot; could look and feel like.</p>
           <p>🏡</p>
+          <p><sup>🔑todo-todo</sup></p>
         </>
       }
       challengeText={

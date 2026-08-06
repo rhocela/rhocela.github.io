@@ -28,6 +28,7 @@ export default function Trece(): ReactNode {
           <p>Here, we have said several times,</p>
           <p>&quot;I love doing this with you&quot; and</p>
           <p>&quot;I've always wanted a relationship like this.&quot;</p>
+          <p><sup>🔑philippines</sup></p>
         </>
       }
       challengeText={

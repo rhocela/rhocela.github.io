@@ -25,6 +25,7 @@ export default function Cuatro(): ReactNode {
           <p>
             But my goal is to get her fully on my team to make our favorite person happy for the rest of our lives. 🏡
           </p>
+          <p><sup>🔑the</sup></p>
         </>
       }
       challengeText={

@@ -18,6 +18,7 @@ export default function Cinco(): ReactNode {
           <p>Somehow my body has an involuntary habit of wandering off until it finds its favorite place. 😏</p>
           <p>I don't even think about it anymore.</p>
           <p>I guess my body just knows where it belongs. 🏡 </p>
+          <p><sup>🔑to</sup></p>
         </>
       }
       challengeText={

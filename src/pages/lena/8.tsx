@@ -15,6 +15,7 @@ export default function Ocho(): ReactNode {
           <p>“Awww... she's adorable.” 😂</p>
           <p>Yet somehow...</p>
           <p>Here we are.</p>
+          <p><sup>🔑the</sup></p>
         </>
       }
       challengeText="Go pay a visit to one of the fluffy ladies of the house."

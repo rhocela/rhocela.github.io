@@ -23,6 +23,7 @@ export default function Quince(): ReactNode {
           <p>I remember <strong>why</strong>.</p>
           <p>This is someone whose love for you has never needed proof... </p>
           <p>💗</p>
+          <p><sup>🔑moon</sup></p>
         </>
       }
       challengeText={

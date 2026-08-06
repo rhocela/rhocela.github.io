@@ -24,6 +24,7 @@ export default function Uno(): ReactNode {
             you're the only witness.
           </p>
           <p>...and somehow you keep letting me get away with it. 😂</p>
+          <p><sup>🔑to</sup></p>
         </>
       }
       challengeText={

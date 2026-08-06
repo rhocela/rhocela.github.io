@@ -15,6 +15,7 @@ export default function Doce(): ReactNode {
           <p>...and every single time this other chick decides it's the perfect time to interrupt! 😂</p>
           <p>YES even our white little bubble isn't safe from this hunt. </p>
           <p>🤷🏼‍♀️</p>
+          <p><sup>🔑klitchen</sup></p>
         </>
       }
       challengeText={

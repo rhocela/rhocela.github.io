@@ -19,6 +19,7 @@ export default function Seis(): ReactNode {
          
           <p>What am I?</p>
           <p>You guessed... eventually. 😹</p>
+          <p><sup>🔑yu</sup></p>
         </>
       }
       challengeText={

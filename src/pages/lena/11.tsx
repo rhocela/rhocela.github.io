@@ -12,6 +12,7 @@ export default function Once(): ReactNode {
           <p>What song reminds you most of us?</p>
           <p>There isn't a wrong answer.</p>
           <p>Just stay with that memory for a moment. <br /> 🎶</p>
+          <p><sup>🔑and</sup></p>
         </>
       }
             challengeText={

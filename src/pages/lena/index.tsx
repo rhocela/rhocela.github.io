@@ -48,8 +48,9 @@ export default function LenaHome(): ReactNode {
             <p className={styles.poem}>
               I've created a little adventure just for you.<br />
               15 challenges hidden throughout the house.<br />
-              Each clue will lead you to a place<br />
-              that holds a memory,<br />
+              Each clue will lead you to a <i>keyword</i><br />
+              and a place that holds <br />
+              a memory,<br />
               a laugh,<br />
               an inside joke,<br />
               something about you,<br />
@@ -71,6 +72,7 @@ export default function LenaHome(): ReactNode {
 
             <p className={styles.closing}>Happy Birthday, My Darling!</p>
             <p className={styles.closing}>I love you more than I love jumpys. 😜🦘 <br />❤️</p>
+            
           </div>
 
           <div className={styles.ctaSection}>

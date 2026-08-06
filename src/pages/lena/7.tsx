@@ -16,6 +16,7 @@ export default function Siete(): ReactNode {
           <p>I'm only sure of a few things in this life--one of them is that you are so precious to God, and that God loves you sooo dearly, abosuletly and uncondtionally, more than I or anyone ever could.</p>
           <p>As you open your heart to the posibility that THIS God is real, I trust that wherever it leads you, it's where the true and living God wants you to be. </p>
           <p> 🤍</p>
+          <p> <sup>🔑i</sup></p>
         </>
       }
       challengeText={
@@ -35,7 +36,7 @@ export default function Siete(): ReactNode {
           A promise.<br />
           A Word that will never change.<br />
           A Word that will never return void.<br /><br />
-          Come and visit me where I live.
+          Come and visit me where I live.  
         </>
       }
       hintText="Where I live has many leaves, but I'm not a plant or a tree. They say the Word of God is imprinted in me."

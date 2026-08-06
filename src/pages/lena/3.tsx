@@ -40,8 +40,9 @@ export default function Tres(): ReactNode {
           <p>
             this member has agreed to become my accomplice.
           </p>
-          <p>I paid her in belly rubs.</p>
-          <p>She accepted immediately. 🤷🏻‍♀️</p>
+          <p>I paid her in boob rubs.  <br />
+          She accepted immediately. 🤷🏻‍♀️</p>
+          <p><sup>🔑lab</sup></p>
         </>
       }
       challengeText={

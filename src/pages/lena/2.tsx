@@ -20,6 +20,7 @@ export default function Dos(): ReactNode {
           </p>
           <p>Thank you, meine Herzen. 🥹</p>
           <p>Now you're officially equipped for the next adventure—in the WILD!</p>
+          <p><sup>🔑your</sup></p>
         </>
       }
       challengeText="Somewhere in this home lives the biggest proof that your thumb not only has a color. It also has magical powers—even velvet thrives in your hands!"
