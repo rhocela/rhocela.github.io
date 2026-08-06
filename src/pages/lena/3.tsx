@@ -56,7 +56,7 @@ export default function Tres(): ReactNode {
           Bring my accomplice to the garden or anywhere outside. Do a trick and video-record it. <br /> <br /> 
           
           STEP 3: <br />
-          Send the video to your Secret Agent via WhatsApp: +65 8145 0718. (Yep, fortunately for you, an innocent bystander has volunteered to be your Secret Agent to give you the next clue!) <br /> <br />
+          Send the video to your Secret Agent via WhatsApp. Agent code: +65 8145 0718. (Yep, fortunately for you, an innocent bystander has volunteered to be your Secret Agent to give you the next clue!) <br /> <br />
 
           STEP 4: <br />Along with the video, ask your Secret Againt: “Are you beautiful?” in Bisaya. She will give you the clue to the secret code.<br />
           <br />

@@ -18,14 +18,17 @@ export default function LenaHome(): ReactNode {
       <main className={styles.pageMain}>
         <div className={styles.container}>
 
-          <h2 className={styles.sectionTitle}>Operation 🕵🏻‍♀️ Geburtstag</h2>
+          <h2 className={styles.sectionTitle}>Operation 🕵️‍♀️Geburtstag</h2>
 
           <div className={styles.messageCard}>
             <p className={styles.openingLine}>
-              <strong>Meine Mäusekind! 🐭❤️</strong>
+              <strong>My Lena ❤️ <br /> </strong>
+              
             </p>
 
             <p className={styles.poem}>
+              Meine Mäusekind! 🐭
+             <br /> 
               I wish I could be there to give you<br />
               morning kisses,<br />
               make you tea,<br />
