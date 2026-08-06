@@ -7,7 +7,9 @@ export default function Tres(): ReactNode {
   const [feedback, setFeedback] = useState('');
 
   const handleUnlock = () => {
-    if (password.trim().toLowerCase() === 'lena') {
+    const normalizedPassword = password.trim().toLowerCase();
+
+    if (normalizedPassword === 'lena') {
       window.location.assign('/lena/4');
       return;
     }
