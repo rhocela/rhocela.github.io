@@ -29,19 +29,19 @@ export default function FinallyPage(): ReactNode {
                 You are my answered prayer.
               </p>
               <p>
-                And my prayer is for you to flourish in God&apos;s hands, and experience the fulfillment of your heart&apos;s desires.
+                And my prayer is for you to flourish in God&apos;s hands, and experience the fulfillment of all your heart&apos;s desires.
               </p>
               <p>
                 I can&apos;t wait to see you again.
               </p>
               <p>
-                Consider this one very long, very tight hug.
+                Consider this one very long, very tight, <br /> slightly naughty hug.😄
               </p>
               <p> ---</p>
               <p className={styles.finalSignature}>
                  </p>
 
-              <p><sup>Did you notice the little keywords I left along the way? Text it to me if you know the full sentence. </sup></p>
+              <p><sup>Did you notice the little keywords I left along the way? Send the 15-word sentence to me if you know it! </sup></p>
               <p> ♥️ </p>
             </div>
           </div>

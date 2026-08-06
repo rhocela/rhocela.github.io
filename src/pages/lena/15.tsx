@@ -9,7 +9,7 @@ export default function Quince(): ReactNode {
       message={
         <>
           <p>BRAVO here we go!</p>
-          <p>You are down to the last pitstop of this little adventure!</p>
+          <p>You are down to the last pit stop of this little adventure!</p>
           <p>You&apos;ve nearly reached the end.</p>
           <p>Or maybe...</p>
           <p>just the beginning. ❤️</p>
@@ -20,7 +20,7 @@ export default function Quince(): ReactNode {
           <p><i>“It&apos;s your birthday today, and you&apos;ve received gifts from family and friends. Who gave you the biggest present?”</i></p>
           <p>I still remember your answer.</p>
           <p>And more importantly...</p>
-          <p>I remember <strong>why</strong>.</p>
+          <p>I know <strong>why</strong>.</p>
           <p>This is someone whose love for you has never needed proof... </p>
           <p>💗</p>
           <p><sup>🔑moon</sup></p>

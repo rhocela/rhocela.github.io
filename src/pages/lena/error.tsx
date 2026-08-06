@@ -28,13 +28,13 @@ export default function ErrorPage(): ReactNode {
         body={
           <>
             <p>
-              Looks like this pit stop hit a little roadblock.
+              Looks like you hit a little roadblock at this pit stop.
             </p>
             <p>
               You&apos;ll need a trusted friend to help you through the bumps ahead.
             </p>
             <p>
-              You know...
+              You know—
             </p>
             <p>
               The one who always knows exactly what to say.
@@ -49,7 +49,7 @@ export default function ErrorPage(): ReactNode {
               Yes! THAT someone is my friend now too 😜💕
             </p>
             <p>
-              Ask her for the password...
+              She's waiting to give you the password...
             </p>
           </>
         }

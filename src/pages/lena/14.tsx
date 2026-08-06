@@ -36,7 +36,7 @@ export default function Catorce(): ReactNode {
           <p>There is someone who used to be under the same roof.</p>
           <p>Now this person is hours away.</p>
           <p>To get the next clue, tell this person two things: </p> 
-          <p> One thing you miss about them, and one thing you love about them.</p>
+          <p> One thing you miss about them, and one thing you love about them. Then ask for the clue.</p>
           <div className={styles.passwordGate}>
             <label className={styles.passwordLabel} htmlFor="lena-14-password">Tubag</label>
             <input
