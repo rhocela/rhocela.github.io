@@ -9,7 +9,7 @@ export default function Siete(): ReactNode {
       message={
         <>
           <p>Before we continue...</p>
-          <p>I couldn't make a treasure hunt about us without stopping here.</p>
+          <p>I couldn't make a Schnitzeljagd about us without stopping here.</p>
           <p>Because I genuinely believe God wrote this chapter long before either of us knew it.</p>
           <p>I want to thank you for opening your heart to God again.</p>
           <p>If there was only one gift to give you, I'd choose that for you in a heartbeat. </p>
