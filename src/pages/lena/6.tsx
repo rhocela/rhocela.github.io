@@ -30,8 +30,7 @@ export default function Seis(): ReactNode {
           But this time for you, <br />
           There's no guessing required. <br /> <br />
           But because I feel generous today, <br /> 
-          Let me leave your with this <br />
-          Poem of the century 📜 <br /> 
+          Let me leave you with this poem 📜 <br />
           As a gift on your Birthday 🤓 <br />  <br /> 
 
           Some things are worth keeping <br/>
@@ -43,7 +42,7 @@ export default function Seis(): ReactNode {
       }
       hintText={
         <>
-          I may not be Superman but I'm made of steel. 🗑️ <br /> 
+          I may not be Superman but I'm made of steel. <br /> 
           
         </>
       }
