@@ -8,7 +8,6 @@ export default function Trece(): ReactNode {
       h2Title="Home"
       message={
         <>
-          <p>Okay...</p>
           <p>You've taken the journey.</p>
           <p>You've made it this far.</p>
           <p>It's time to come back home.</p>
@@ -18,7 +17,7 @@ export default function Trece(): ReactNode {
           <p>We always end up making memories.</p>
           <p>The moments some would call ordinary...</p>
           <p>have become some of my favorite moments with you.</p>
-          <p>Whenever you we arrive home, it's almost always the first place we go to.</p>
+          <p>Whenever we arrive home, it's almost always the first place we go to.</p>
           <p>Somehow, this little space has become a home within your home.</p>
           <p>Here we had serious conversations,</p>
           <p>Shared sad and happy tears,</p>
@@ -36,7 +35,7 @@ export default function Trece(): ReactNode {
           <p>Today's secrets ingredient are... <br />
           ❤️ Love <br /> 
           🧈 Butter <br /> 
-          🗒️ A mysterious note:<br /> <br />
+          🗒️ And a mysterious note:<br /> <br />
           <i>I was sent on a very important mission.</i><br />
           <i>Convert one German...</i><br />
           <i>into an honorary Asian.</i><br /> <br />
