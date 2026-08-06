@@ -20,7 +20,7 @@ export default function Doce(): ReactNode {
       }
       challengeText={
         <>
-          <p>I don't wear a cape, yet I rescue each mess. <br />
+          <p> 🚗 In your little bubble, I don't wear a cape, yet I rescue each mess. <br />
           From sh*t to stink, I quietly say &quot;yes&quot;.<br />
           I sit here and I patiently wait,<br />
           Behind this tiny door, I await my fate.</p>
