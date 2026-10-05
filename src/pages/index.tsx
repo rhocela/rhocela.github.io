@@ -73,7 +73,7 @@ function HomepageHeader() {
             }}>
             View my portfolio
           </Link>
-          <a
+          {/* <a
             href="https://drive.google.com/file/d/1GRXUg1uiGIPiXQtlNAslWxp3eoYxbnx_/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
@@ -100,7 +100,7 @@ function HomepageHeader() {
               e.currentTarget.style.transform = 'translateY(0)';
             }}>
             Download CV
-          </a>
+          </a> */}
         </div>
       </div>
     </header>
