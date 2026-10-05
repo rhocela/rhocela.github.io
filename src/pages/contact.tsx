@@ -200,7 +200,7 @@ export default function Contact(): ReactNode {
             </div>
           </section>
 
-          <section style={{marginBottom: '3rem'}}>
+          {/* <section style={{marginBottom: '3rem'}}>
             <Heading as="h2" style={{marginBottom: '1.5rem'}}>Download my CV</Heading>
             <div style={{
               padding: '2rem',
@@ -241,7 +241,7 @@ export default function Contact(): ReactNode {
                 Download CV
               </a>
             </div>
-          </section>
+          </section> */}
         </div>
       </main>
     </Layout>

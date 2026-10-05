@@ -41,7 +41,7 @@ export default function About(): ReactNode {
               <StatCard emoji="📚" value="10+ Years" label="Experience" />
               <StatCard emoji="🌍" value="4 Countries" label="Global work" />
               <StatCard emoji="🏢" value="5 Industries" label="Diverse sectors" />
-              <StatCard emoji="⚡" value="Scrum Master" label="Agile leader" />
+              <StatCard emoji="⚡" value="Scrum Master" label="Agile team support" />
             </div>
           </div>
 
@@ -343,7 +343,7 @@ export default function About(): ReactNode {
 
           {/* Download CV Button */}
           <div style={{textAlign: 'center', paddingBottom: '2rem'}}>
-            <a 
+            {/* <a
               href="https://drive.google.com/file/d/1GRXUg1uiGIPiXQtlNAslWxp3eoYxbnx_/view?usp=sharing" 
               target="_blank"
               rel="noopener noreferrer"
@@ -369,7 +369,7 @@ export default function About(): ReactNode {
               }}
             >
               📄 Download CV
-            </a>
+            </a> */}
             
             {/* Back to Top Link */}
             <div style={{marginTop: '2rem'}}>
