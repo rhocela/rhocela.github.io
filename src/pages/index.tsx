@@ -61,9 +61,9 @@ function HomepageHeader() {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          gap: '1rem',
+          gap: '2rem',
           flexWrap: 'wrap',
-          marginTop: '2rem'
+          marginTop: '1.3rem'
         }}>
           <Link
             className="button button--secondary button--lg"
