@@ -18,11 +18,11 @@ function HomepageHeader() {
           src="/img/rhocela-headshot.png" 
           alt="Rhocela Pasigna" 
           style={{
-            width: '180px',
-            height: '180px',
+            width: '120px',
+            height: '120px',
             borderRadius: '50%',
             objectFit: 'cover',
-            margin: '0 auto 2rem',
+            margin: '0 auto 0.75rem',
             display: 'block',
             border: '4px solid var(--ifm-color-primary-lightest)',
             boxShadow: '0 4px 12px rgba(0,0,0,0.1)'
@@ -38,7 +38,7 @@ function HomepageHeader() {
           alignItems: 'center',
           justifyContent: 'center',
           gap: '0.75rem',
-          margin: '1.5rem auto',
+          margin: '0.75rem auto',
           flexWrap: 'wrap'
         }}>
           <span style={{fontSize: '0.95rem', fontWeight: 500, opacity: 0.9}}>
@@ -52,7 +52,7 @@ function HomepageHeader() {
           </div>
         </div>
 
-        <p style={{fontSize: '1.1rem', maxWidth: '720px', margin: '20px auto', lineHeight: '1.7'}}>
+        <p style={{fontSize: '1rem', maxWidth: '880px', margin: '8px auto', lineHeight: '1.5', textWrap: 'balance'}}>
           I build documentation systems from the ground up—from defining editorial standards to implementing 
           docs-as-code workflows and choosing tools that fit. I create content that solves real problems for technical and non-technical users. At Luxembourg National Data Services (LNDS), I own the 
           complete documentation lifecycle for operational documentation, while serving as Scrum Master to keep cross-functional teams aligned and moving forward.
@@ -61,7 +61,7 @@ function HomepageHeader() {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          gap: '2rem',
+          gap: '1rem',
           flexWrap: 'wrap',
           marginTop: '2rem'
         }}>
