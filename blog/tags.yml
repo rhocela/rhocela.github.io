@@ -8,6 +8,11 @@ technical-writing:
   permalink: /technical-writing
   description: Insights and tips on technical writing
 
+logistics:
+  label: Logistics
+  permalink: /logistics
+  description: Insights on logistics processes and technology
+
 welcome:
   label: Welcome
   permalink: /welcome
